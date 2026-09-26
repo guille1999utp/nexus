@@ -4,7 +4,6 @@ import AnimatedH1 from "@/components/global/AnimatedH1/AnimatedH1";
 import AnimatedCopy from "@/components/global/AnimatedCopy/AnimatedCopy";
 import AnimationContainer from "@/components/global/animation-container";
 import Orbit from "@/components/global/Orbit";
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 import { NexusLogo } from "@/components/global/NexusLogo";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
@@ -17,21 +16,8 @@ export default function Hero() {
   const stats = t.raw("stats") as HeroStat[];
 
   return (
-    <section className="relative isolate min-h-[100svh] w-full overflow-hidden cosmos-bg">
+    <section className="relative min-h-[100svh] w-full overflow-hidden">
       {/* Deep-space backdrop */}
-      <GalaxyBackground />
-      <div
-        aria-hidden="true"
-        className="absolute -left-48 -top-48 size-[640px] rounded-full bg-brand-indigo/30 blur-[160px] animate-glow-pulse"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute -right-40 -bottom-48 size-[560px] rounded-full bg-brand-gold/15 blur-[160px] animate-glow-pulse [animation-delay:-3s]"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background"
-      />
 
       <div className="relative z-[1] mx-auto grid min-h-[100svh] w-full max-w-[1440px] items-center gap-4 px-5 pt-24 pb-20 md:px-10 lg:grid-cols-[1.1fr_0.9fr] lg:gap-10 lg:pt-24">
         {/* Logo with orbits */}

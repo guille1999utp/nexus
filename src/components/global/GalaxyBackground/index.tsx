@@ -62,6 +62,11 @@ export default function GalaxyBackground({
         className
       )}
     >
+      {/* Deep-space base: the brand's violet and gold glow plus a vignette.
+          This used to live on each surface as `cosmos-bg`; it belongs here now
+          that one sky serves the whole document. */}
+      {isFull && <div className="cosmos-bg absolute inset-0" />}
+
       {/* Coloured gas, furthest back. */}
       {nebula && (
         <div

@@ -11,6 +11,7 @@ import { ThemeProvider } from "@/provider/theme-provider";
 import ProgressBar from "@/components/global/ProgressBar/ProgressBar";
 import GradientBlur from "@/components/global/GradientBlur";
 import { Analytics } from "@vercel/analytics/react";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 type Props = {
   children: ReactNode;
@@ -103,7 +104,7 @@ export default async function LocaleLayout({ children, params }: Props) {
         className={clsx(
           heading.variable,
           body.variable,
-          "overflow-x-hidden bg-background font-sans text-foreground antialiased"
+          "overflow-x-hidden font-sans text-foreground antialiased"
         )}
       >
         <ThemeProvider
@@ -114,6 +115,9 @@ export default async function LocaleLayout({ children, params }: Props) {
           disableTransitionOnChange
         >
           <NextIntlClientProvider>
+            {/* One sky for the whole document: per-section backdrops
+                left a visible seam at every section boundary. */}
+            <GalaxyBackground className="fixed -z-10" />
             <GradientBlur position="top" />
             <Suspense>
               <ProgressBar />

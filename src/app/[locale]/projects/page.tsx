@@ -11,7 +11,6 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import ScrollToTopButton from '@/components/global/top-button'
 import { useTranslations } from 'next-intl'
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 
 function Projects() {
@@ -31,11 +30,8 @@ function Projects() {
   return (
     <main className="relative overflow-hidden" ref={container}>
       <Nav />
-      <div className="relative cosmos-bg">
-        <GalaxyBackground variant="full" className="h-[130vh]" />
-        <div aria-hidden="true" className="absolute -left-40 -top-40 size-[560px] rounded-full bg-brand-indigo/25 blur-[150px]" />
+      <div className="relative">
         <Orbit className="absolute -right-[30vw] -top-[18vw] size-[70vw] lg:-right-[14vw] lg:size-[46vw]" duration={110} opacity={0.35} />
-        <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background" />
         <section className="relative mx-auto flex w-full max-w-[1440px] flex-col justify-between overflow-x-hidden px-5 pt-28 md:px-10 md:pt-36">
           <div className="mb-8 space-y-3 lg:max-w-[70%]">
             <SectionLabel>{tSections("projects")}</SectionLabel>
@@ -50,9 +46,8 @@ function Projects() {
       <ScrollToTopButton />
       <motion.div
         style={{ height }}
-        className="bg-background relative mt-[50px] md:mt-[100px]"
+        className="relative mt-[50px] md:mt-[100px]"
       >
-        <div className="h-[600%] w-[120%] left-[-10%] rounded-b-[50%] bg-background absolute z-[1] shadow-[0_60px_60px_rgba(2,5,26,0.85)] border-b border-brand-violet/20" />
       </motion.div>
       <Footer />
     </main>

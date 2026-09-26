@@ -8,7 +8,6 @@ import Marquee from "@/components/ui/marquee";
 import AnimationContainer from "@/components/global/animation-container";
 import SectionLabel from "@/components/global/SectionLabel";
 import { useTranslations } from "next-intl";
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 export default function Brands() {
 const container = useRef<HTMLDivElement>(null);
@@ -80,11 +79,6 @@ const listLogos = Array.from({ length: 24 }, (_, index) => {
         ref={container}
         className={`relative mt-10 md:mt-20 ${isOutside ? "overflow-hidden" : ""}`}
       >
-        <GalaxyBackground variant="section" />
-        <div
-          aria-hidden="true"
-          className="absolute left-0 top-0 size-[480px] rounded-full bg-brand-indigo/15 blur-[140px]"
-        />
         <div className="relative mx-auto mb-10 max-w-[1440px] px-5 sm:mb-14 md:mb-20 md:px-10">
           <SectionLabel index="(04)">{tSections("stack")}</SectionLabel>
           <ScrollFloat
@@ -192,9 +186,8 @@ const listLogos = Array.from({ length: 24 }, (_, index) => {
         {/* Curved edge into the next section */}
         <motion.div
           style={{ height }}
-          className="bg-background relative mt-[50px] md:mt-[100px]"
+          className="relative mt-[50px] md:mt-[100px]"
         >
-          <div className="h-[1550%] w-[120%] left-[-10%] rounded-b-[50%] bg-background absolute z-[1] shadow-[0_60px_60px_rgba(2,5,26,0.85)] border-b border-brand-violet/20" />
         </motion.div>
       </section>
     );

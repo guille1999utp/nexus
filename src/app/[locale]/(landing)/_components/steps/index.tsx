@@ -12,7 +12,6 @@ import { Project } from '@/types'
 import AnimationContainer from '@/components/global/animation-container'
 import AnimatedH1 from '@/components/global/AnimatedH1/AnimatedH1'
 import SectionLabel from '@/components/global/SectionLabel'
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 function Steps() {
   const stickySectionRef = useRef<HTMLDivElement>(null)
@@ -186,8 +185,7 @@ function Steps() {
   const counters = ["01", "02", "03", "04", "05", ...(isMobile ? [] : ["06"])];
 
   return (
-    <div className="container overflow-hidden">
-      <GalaxyBackground variant="section" />
+    <div className="relative h-full w-full overflow-hidden p-5">
       <section className="steps" ref={stickySectionRef}>
         <div
           className="absolute z-[2] flex flex-col m-[4em_2em_2em_0] md:m-[5em_2em_2em_1em] will-change-transform"
@@ -230,10 +228,6 @@ function Steps() {
         </div>
 
         <div className="absolute top-[50%] left-1/2 -translate-y-1/2 w-[130vw] h-[600px] will-change-transform md:top-[50%] mt-[90%] sm:mt-[12%]">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute left-1/2 top-1/2 size-[60vw] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-violet/15 blur-[140px]"
-          />
           {projects.map((step, i) => (
             <div
               className={`absolute w-[70vw] md:w-[90vw] h-[90vw] p-1.5 md:p-2 rounded-3xl left-1/2 top-1/2 -ml-[250px] flex flex-col will-change-transform md:w-[450px] xl:w-[350px] 2xl:w-[450px] md:h-[62vh] 2xl:h-[60vh] shadow-[0_40px_80px_-30px_rgba(2,5,26,0.95)] ${

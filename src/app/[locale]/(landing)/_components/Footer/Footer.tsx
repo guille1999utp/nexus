@@ -15,7 +15,6 @@ import TikTokIcon from "@/components/icons/tiktok";
 import { Menu } from "@/types";
 import { SOCIAL_LINKS, SocialId } from "@/data/socials";
 import type { ComponentType } from "react";
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -34,17 +33,8 @@ const Footer = () => {
   const menu = tMenu.raw("options") as Menu[];
 
   return (
-    <footer className="footer relative w-full overflow-hidden rounded-t-[2rem] bg-space-950 pt-16 md:rounded-t-[3rem] md:pt-24">
+    <footer className="footer relative w-full overflow-hidden rounded-t-[2rem] pt-16 md:rounded-t-[3rem] md:pt-24">
       {/* Deep-space decoration */}
-      <GalaxyBackground variant="section" />
-      <div
-        aria-hidden="true"
-        className="absolute -left-40 top-0 size-[560px] rounded-full bg-brand-indigo/20 blur-[160px]"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute -right-40 bottom-0 size-[520px] rounded-full bg-brand-gold/10 blur-[160px]"
-      />
       <Orbit
         className="absolute -right-[25vw] -top-[20vw] size-[70vw] md:-right-[15vw]"
         duration={120}
@@ -59,10 +49,6 @@ const Footer = () => {
         {/* CTA band */}
         <AnimationContainer animation="fadeUp">
           <div className="relative gradient-ring overflow-hidden rounded-3xl bg-white/[0.03] p-6 backdrop-blur-xl md:p-10 lg:p-14">
-            <div
-              aria-hidden="true"
-              className="absolute -right-24 -top-24 size-72 rounded-full bg-brand-violet/30 blur-[100px]"
-            />
             <div className="relative flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
               <div className="max-w-2xl">
                 <span className="eyebrow text-brand-gold-light">{t("tagline")}</span>

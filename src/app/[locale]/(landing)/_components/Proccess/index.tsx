@@ -14,7 +14,6 @@ import { ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
 import { Steps } from '@/types';
 import SectionLabel from '@/components/global/SectionLabel';
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 const Proccess = () => {
   const stickyCardsRef = useRef<HTMLDivElement>(null);
@@ -141,14 +140,9 @@ const Proccess = () => {
   return (
     <>
       <section
-        className="relative w-screen h-screen overflow-hidden bg-background max-sm:!pt-24"
+        className="relative w-screen h-screen overflow-hidden max-sm:!pt-24"
         ref={stickyCardsRef}
       >
-        <GalaxyBackground variant="section" />
-        <div
-          aria-hidden="true"
-          className="absolute left-1/2 top-1/2 size-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-violet/15 blur-[140px]"
-        />
         <div
           className={`relative flex flex-col px-4 mx-auto max-w-[1800px] md:h-full pb-10 justify-center items-center text-center transition-all duration-500 ${
             isBlurred ? "blur-[6px]" : ""

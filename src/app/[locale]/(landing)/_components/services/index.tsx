@@ -10,7 +10,6 @@ import { useMediaQuery } from "react-responsive";
 import useIsIphoneOrSafari from "@/hooks/useIsIphoneOrSafari";
 import { useTranslations } from "next-intl";
 import { Service } from "@/types";
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 interface AnimatedSectionProps {
   title: string;
@@ -122,12 +121,7 @@ export default function ServicesSection() {
   const sections = t.raw("sections") as Service[];
 
   return (
-    <div className="relative w-full overflow-hidden bg-background pt-24 sm:pt-28 lg:max-w-none">
-      <GalaxyBackground variant="section" />
-      <div
-        aria-hidden="true"
-        className="absolute -right-40 top-10 size-[520px] rounded-full bg-brand-violet/15 blur-[150px]"
-      />
+    <div className="relative w-full overflow-hidden pt-24 sm:pt-28 lg:max-w-none">
       <div className="relative mx-auto flex max-w-[1440px] flex-col items-end gap-2 px-5 text-right md:px-10">
         <SectionLabel index="(02)" align="right">
           {tSections("services")}

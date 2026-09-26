@@ -216,8 +216,10 @@
     background-color: var(--background);
   }
 
+  /* Transparent on purpose: `html` above paints the base colour, which frees
+     the body so the fixed galaxy layer (z-index -10) can show through it. */
   body {
-    @apply bg-background text-foreground font-sans antialiased;
+    @apply text-foreground font-sans antialiased;
   }
 
   ::selection {
@@ -444,11 +446,11 @@
 /* Coloured gas. Sits under the stars and slowly breathes. */
 @utility nebula-clouds {
   background-image:
-    radial-gradient(38% 30% at 18% 24%, rgb(110 57 253 / 0.34), transparent 72%),
-    radial-gradient(32% 26% at 76% 18%, rgb(46 108 255 / 0.26), transparent 72%),
-    radial-gradient(45% 32% at 62% 74%, rgb(88 58 252 / 0.28), transparent 75%),
-    radial-gradient(26% 22% at 34% 82%, rgb(231 179 119 / 0.14), transparent 70%),
-    radial-gradient(30% 24% at 92% 58%, rgb(169 150 255 / 0.18), transparent 72%);
+    radial-gradient(38% 30% at 18% 24%, rgb(110 57 253 / 0.5), transparent 72%),
+    radial-gradient(32% 26% at 76% 18%, rgb(46 108 255 / 0.38), transparent 72%),
+    radial-gradient(45% 32% at 62% 74%, rgb(88 58 252 / 0.4), transparent 75%),
+    radial-gradient(26% 22% at 34% 82%, rgb(231 179 119 / 0.2), transparent 70%),
+    radial-gradient(30% 24% at 92% 58%, rgb(169 150 255 / 0.26), transparent 72%);
   filter: blur(28px);
 }
 

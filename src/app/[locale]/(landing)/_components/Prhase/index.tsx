@@ -1,7 +1,6 @@
 import Orbit from '@/components/global/Orbit';
 import ScrollFloat from '@/components/global/scrol-float';
 import { useTranslations } from 'next-intl';
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 function Phrase() {
   const t = useTranslations();
@@ -9,8 +8,7 @@ function Phrase() {
   const phrase = t('Phrase').replace(/^["“]|["”]$/g, '');
 
   return (
-    <section className="relative overflow-hidden bg-background">
-      <GalaxyBackground variant="section" />
+    <section className="relative overflow-hidden">
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-0 h-px bg-linear-to-r from-transparent via-brand-violet/70 to-transparent"

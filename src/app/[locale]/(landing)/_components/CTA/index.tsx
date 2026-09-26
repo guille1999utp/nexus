@@ -7,7 +7,6 @@ import Image from "next/image";
 import { useMediaQuery } from "react-responsive";
 import Orbit from "@/components/global/Orbit";
 import { NexusLogo } from "@/components/global/NexusLogo";
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -114,12 +113,7 @@ export default function CTA() {
   };
 
   return (
-    <section className="main relative flex w-screen flex-col items-center justify-center overflow-hidden bg-background">
-      <GalaxyBackground variant="section" />
-      <div
-        aria-hidden="true"
-        className="absolute left-1/2 top-[45%] size-[80vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-violet/20 blur-[140px]"
-      />
+    <section className="main relative flex w-screen flex-col items-center justify-center overflow-hidden">
 
       <div className="main-content absolute top-[45%] left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center px-4">
         <div className="cta-logo relative w-[80vw] max-w-[540px] md:w-[40vw] scale-0">

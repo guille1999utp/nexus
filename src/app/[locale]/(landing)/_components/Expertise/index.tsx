@@ -13,7 +13,6 @@ import { WhatWeDo } from '@/types';
 import AnimationContainer from '@/components/global/animation-container';
 import Orbit from '@/components/global/Orbit';
 import SectionLabel from '@/components/global/SectionLabel';
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -101,12 +100,7 @@ function Expertise() {
 
   return (
     <div className="page" ref={container}>
-      <section className="expertise relative w-screen h-full min-h-screen bg-background">
-        <GalaxyBackground variant="section" />
-        <div
-          aria-hidden="true"
-          className="absolute -left-40 top-24 size-[520px] rounded-full bg-brand-indigo/15 blur-[140px]"
-        />
+      <section className="expertise relative w-screen h-full min-h-screen">
 
         <div className="expertise-header lg:absolute top-0 left-0 w-screen lg:h-screen pt-20 lg:pt-24 overflow-hidden">
           <div className="relative mx-auto flex h-full w-full max-w-[1440px] flex-col px-5 md:px-10 lg:justify-center lg:pb-16">

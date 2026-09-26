@@ -11,7 +11,6 @@ import { ArrowRight } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useRef } from "react";
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 const FAQ = () => {
     const isIphoneOrSafari = useIsIphoneOrSafari();
@@ -32,11 +31,6 @@ const t = useTranslations('Faqs');
 
     return (
      <section ref={container} className="relative">
-        <GalaxyBackground variant="section" />
-        <div
-          aria-hidden="true"
-          className="pointer-events-none absolute -right-40 top-40 size-[520px] rounded-full bg-brand-violet/15 blur-[150px]"
-        />
         <div className="relative mx-auto grid max-w-[1440px] grid-cols-1 gap-10 px-5 pt-16 md:px-10 md:pt-24 lg:grid-cols-2 lg:gap-16 lg:pt-32">
           <div className="row flex flex-col">
             <div>
@@ -109,9 +103,8 @@ const t = useTranslations('Faqs');
         </div>
         <motion.div
           style={{ height }}
-          className="bg-background relative mt-[50px] md:mt-[100px]"
+          className="relative mt-[50px] md:mt-[100px]"
         >
-          <div className="h-[1400%] w-[120%] left-[-10%] rounded-b-[50%] bg-background absolute z-[1] shadow-[0_60px_60px_rgba(2,5,26,0.85)] border-b border-brand-violet/20" />
         </motion.div>
      </section>
     );

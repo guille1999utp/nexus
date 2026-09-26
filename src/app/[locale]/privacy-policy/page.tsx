@@ -9,7 +9,6 @@ import AnimatedCopy from '@/components/global/AnimatedCopy/AnimatedCopy'
 import AnimationContainer from '@/components/global/animation-container';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import {  useRef } from 'react';
-import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 function PrivacyPolicy() {
 
@@ -25,9 +24,7 @@ function PrivacyPolicy() {
     
 
   return (
-    <main ref={container} className="relative overflow-hidden cosmos-bg">
-      <GalaxyBackground variant="quiet" className="h-[120vh]" />
-      <div aria-hidden="true" className="pointer-events-none absolute -left-40 -top-40 size-[520px] rounded-full bg-brand-indigo/25 blur-[150px]" />
+    <main ref={container} className="relative overflow-hidden">
       <Nav />
       <section className="relative pt-28 md:pt-36 2xl:pt-40 lg:max-w-[55%] w-screen inset-0 flex flex-col justify-between md:w-[95%] overflow-x-hidden mx-auto px-5">
         <div className="p-2">
@@ -81,9 +78,8 @@ function PrivacyPolicy() {
       </section>
       <motion.div
         style={{ height }}
-        className="bg-background relative mt-[50px] md:mt-[100px]"
+        className="relative mt-[50px] md:mt-[100px]"
       >
-        <div className="h-[500%] w-[120%] left-[-10%] rounded-b-[50%] bg-background absolute z-[1] shadow-[0_60px_60px_rgba(2,5,26,0.85)] border-b border-brand-violet/20" />
       </motion.div>
       <Footer />
     </main>
