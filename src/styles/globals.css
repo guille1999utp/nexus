@@ -57,6 +57,43 @@
   50% { opacity: 0.8; }
 }
 
+/* Parallax drift. Each layer travels exactly one tile, so the loop is seamless. */
+@keyframes drift-far {
+  to { transform: translate3d(-820px, 820px, 0); }
+}
+
+@keyframes drift-mid {
+  to { transform: translate3d(-620px, 620px, 0); }
+}
+
+@keyframes drift-near {
+  to { transform: translate3d(-430px, 430px, 0); }
+}
+
+/* Offset phases so the three depths never pulse in unison. */
+@keyframes twinkle-soft {
+  0%, 100% { opacity: 0.45; }
+  50% { opacity: 0.75; }
+}
+
+@keyframes twinkle-bright {
+  0%, 100% { opacity: 0.55; }
+  35% { opacity: 1; }
+  70% { opacity: 0.7; }
+}
+
+@keyframes nebula-shift {
+  0%, 100% { transform: scale(1) translate3d(0, 0, 0); opacity: 0.85; }
+  50% { transform: scale(1.08) translate3d(2%, -1.5%, 0); opacity: 1; }
+}
+
+@keyframes shooting-star {
+  0% { transform: translate3d(0, 0, 0) rotate(28deg); opacity: 0; }
+  3% { opacity: 1; }
+  18% { opacity: 1; }
+  24%, 100% { transform: translate3d(62vw, 34vw, 0) rotate(28deg); opacity: 0; }
+}
+
 /* ------------------------------------------------------------------ */
 /*  Theme tokens → Tailwind utilities                                  */
 /* ------------------------------------------------------------------ */
@@ -72,6 +109,13 @@
   --animate-gradient-pan: gradient-pan 6s linear infinite;
   --animate-scroll-cue: scroll-cue 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
   --animate-twinkle: twinkle 5s ease-in-out infinite;
+  --animate-drift-far: drift-far 600s linear infinite;
+  --animate-drift-mid: drift-mid 380s linear infinite;
+  --animate-drift-near: drift-near 240s linear infinite;
+  --animate-twinkle-soft: twinkle-soft 7s ease-in-out infinite;
+  --animate-twinkle-bright: twinkle-bright 4.5s ease-in-out infinite;
+  --animate-nebula-shift: nebula-shift 24s ease-in-out infinite;
+  --animate-shooting-star: shooting-star 12s ease-in infinite;
 
   --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
   --font-display: var(--font-heading), var(--font-body), ui-sans-serif, sans-serif;
@@ -322,9 +366,131 @@
   background-image:
     radial-gradient(60% 50% at 12% 8%, rgb(88 58 252 / 0.22), transparent 70%),
     radial-gradient(50% 45% at 92% 92%, rgb(231 179 119 / 0.1), transparent 70%),
-    radial-gradient(70% 60% at 50% 40%, rgb(7 19 77 / 0.9), transparent 80%);
+    radial-gradient(70% 60% at 50% 40%, rgb(7 19 77 / 0.9), transparent 80%),
+    /* Vignette: pulls the eye to the centre and hides where the layers end. */
+    radial-gradient(120% 90% at 50% 50%, transparent 45%, rgb(2 5 26 / 0.7) 100%);
 }
 
+/* ------------------------------------------------------------------ */
+/*  Galaxy backdrop                                                    */
+/*                                                                     */
+/*  Three star layers at different tile sizes and drift speeds, so the */
+/*  field reads as depth instead of one flat texture. Each layer drifts */
+/*  exactly one tile, which makes the loop seamless. The tile sizes    */
+/*  share no common factor, so the combined pattern only repeats after */
+/*  a distance no viewport will ever show.                             */
+/* ------------------------------------------------------------------ */
+
+/* Distant dust: dense, dim, barely moves. */
+@utility starfield-far {
+  background-image:
+    radial-gradient(1px 1px at 4% 9%, rgb(255 255 255 / 0.55), transparent 60%),
+    radial-gradient(1px 1px at 11% 63%, rgb(255 255 255 / 0.4), transparent 60%),
+    radial-gradient(1px 1px at 17% 31%, rgb(169 150 255 / 0.5), transparent 60%),
+    radial-gradient(1px 1px at 23% 88%, rgb(255 255 255 / 0.35), transparent 60%),
+    radial-gradient(1px 1px at 29% 47%, rgb(255 255 255 / 0.5), transparent 60%),
+    radial-gradient(1px 1px at 34% 14%, rgb(169 150 255 / 0.4), transparent 60%),
+    radial-gradient(1px 1px at 41% 72%, rgb(255 255 255 / 0.45), transparent 60%),
+    radial-gradient(1px 1px at 47% 26%, rgb(255 255 255 / 0.3), transparent 60%),
+    radial-gradient(1px 1px at 53% 95%, rgb(255 255 255 / 0.5), transparent 60%),
+    radial-gradient(1px 1px at 58% 38%, rgb(169 150 255 / 0.45), transparent 60%),
+    radial-gradient(1px 1px at 63% 7%, rgb(255 255 255 / 0.4), transparent 60%),
+    radial-gradient(1px 1px at 69% 58%, rgb(255 255 255 / 0.5), transparent 60%),
+    radial-gradient(1px 1px at 74% 83%, rgb(255 255 255 / 0.3), transparent 60%),
+    radial-gradient(1px 1px at 79% 21%, rgb(255 218 156 / 0.4), transparent 60%),
+    radial-gradient(1px 1px at 84% 66%, rgb(255 255 255 / 0.45), transparent 60%),
+    radial-gradient(1px 1px at 88% 43%, rgb(255 255 255 / 0.35), transparent 60%),
+    radial-gradient(1px 1px at 92% 12%, rgb(169 150 255 / 0.5), transparent 60%),
+    radial-gradient(1px 1px at 96% 77%, rgb(255 255 255 / 0.4), transparent 60%),
+    radial-gradient(1px 1px at 8% 41%, rgb(255 255 255 / 0.3), transparent 60%),
+    radial-gradient(1px 1px at 61% 90%, rgb(255 255 255 / 0.45), transparent 60%);
+  background-size: 820px 820px;
+  background-repeat: repeat;
+}
+
+/* Mid field: the main body of stars. */
+@utility starfield-mid {
+  background-image:
+    radial-gradient(1.2px 1.2px at 6% 22%, rgb(255 255 255 / 0.75), transparent 62%),
+    radial-gradient(1.2px 1.2px at 14% 77%, rgb(255 255 255 / 0.6), transparent 62%),
+    radial-gradient(1.4px 1.4px at 21% 44%, rgb(169 150 255 / 0.8), transparent 62%),
+    radial-gradient(1.2px 1.2px at 28% 11%, rgb(255 255 255 / 0.55), transparent 62%),
+    radial-gradient(1.2px 1.2px at 36% 66%, rgb(255 255 255 / 0.7), transparent 62%),
+    radial-gradient(1.4px 1.4px at 43% 33%, rgb(255 218 156 / 0.7), transparent 62%),
+    radial-gradient(1.2px 1.2px at 51% 85%, rgb(255 255 255 / 0.6), transparent 62%),
+    radial-gradient(1.2px 1.2px at 57% 18%, rgb(255 255 255 / 0.5), transparent 62%),
+    radial-gradient(1.4px 1.4px at 64% 55%, rgb(169 150 255 / 0.75), transparent 62%),
+    radial-gradient(1.2px 1.2px at 71% 92%, rgb(255 255 255 / 0.55), transparent 62%),
+    radial-gradient(1.2px 1.2px at 78% 29%, rgb(255 255 255 / 0.7), transparent 62%),
+    radial-gradient(1.4px 1.4px at 85% 71%, rgb(255 218 156 / 0.6), transparent 62%),
+    radial-gradient(1.2px 1.2px at 91% 40%, rgb(255 255 255 / 0.65), transparent 62%),
+    radial-gradient(1.2px 1.2px at 97% 8%, rgb(255 255 255 / 0.5), transparent 62%);
+  background-size: 620px 620px;
+  background-repeat: repeat;
+}
+
+/* Foreground: few, large, with a visible halo. Carries the parallax. */
+@utility starfield-near {
+  background-image:
+    radial-gradient(2.5px 2.5px at 9% 34%, rgb(255 255 255 / 0.95), transparent 55%),
+    radial-gradient(9px 9px at 9% 34%, rgb(169 150 255 / 0.22), transparent 70%),
+    radial-gradient(2px 2px at 24% 71%, rgb(255 255 255 / 0.85), transparent 55%),
+    radial-gradient(2.5px 2.5px at 38% 16%, rgb(255 218 156 / 0.9), transparent 55%),
+    radial-gradient(10px 10px at 38% 16%, rgb(231 179 119 / 0.2), transparent 70%),
+    radial-gradient(2px 2px at 52% 59%, rgb(255 255 255 / 0.8), transparent 55%),
+    radial-gradient(2.5px 2.5px at 66% 88%, rgb(169 150 255 / 0.9), transparent 55%),
+    radial-gradient(2px 2px at 73% 27%, rgb(255 255 255 / 0.85), transparent 55%),
+    radial-gradient(2.5px 2.5px at 87% 63%, rgb(255 255 255 / 0.95), transparent 55%),
+    radial-gradient(9px 9px at 87% 63%, rgb(110 57 253 / 0.22), transparent 70%),
+    radial-gradient(2px 2px at 94% 45%, rgb(255 255 255 / 0.75), transparent 55%);
+  background-size: 430px 430px;
+  background-repeat: repeat;
+}
+
+/* Coloured gas. Sits under the stars and slowly breathes. */
+@utility nebula-clouds {
+  background-image:
+    radial-gradient(38% 30% at 18% 24%, rgb(110 57 253 / 0.34), transparent 72%),
+    radial-gradient(32% 26% at 76% 18%, rgb(46 108 255 / 0.26), transparent 72%),
+    radial-gradient(45% 32% at 62% 74%, rgb(88 58 252 / 0.28), transparent 75%),
+    radial-gradient(26% 22% at 34% 82%, rgb(231 179 119 / 0.14), transparent 70%),
+    radial-gradient(30% 24% at 92% 58%, rgb(169 150 255 / 0.18), transparent 72%);
+  filter: blur(28px);
+}
+
+/* The galactic plane: a bright core smeared into a band, cut by dust lanes. */
+@utility galaxy-band {
+  background-image:
+    linear-gradient(174deg, transparent 38%, rgb(2 5 26 / 0.45) 47%, transparent 56%),
+    linear-gradient(168deg, transparent 50%, rgb(2 5 26 / 0.32) 58%, transparent 67%),
+    radial-gradient(70% 10% at 50% 50%, rgb(255 255 255 / 0.05), transparent 72%),
+    radial-gradient(85% 20% at 50% 50%, rgb(169 150 255 / 0.13), transparent 74%),
+    radial-gradient(100% 34% at 50% 50%, rgb(110 57 253 / 0.15), transparent 76%),
+    radial-gradient(115% 46% at 50% 50%, rgb(46 108 255 / 0.09), transparent 80%);
+  filter: blur(34px);
+}
+
+/* Fine grain, so the gradients never read as flat bands on wide screens. */
+@utility space-dust {
+  background-image:
+    radial-gradient(0.5px 0.5px at 25% 25%, rgb(255 255 255 / 0.35), transparent 50%),
+    radial-gradient(0.5px 0.5px at 75% 75%, rgb(255 255 255 / 0.3), transparent 50%),
+    radial-gradient(0.5px 0.5px at 50% 15%, rgb(169 150 255 / 0.3), transparent 50%),
+    radial-gradient(0.5px 0.5px at 15% 60%, rgb(255 255 255 / 0.25), transparent 50%),
+    radial-gradient(0.5px 0.5px at 85% 40%, rgb(255 255 255 / 0.3), transparent 50%);
+  background-size: 190px 190px;
+  background-repeat: repeat;
+}
+
+/* A streak that crosses the frame every few seconds. */
+@utility shooting-star {
+  width: 120px;
+  height: 1px;
+  background-image: linear-gradient(90deg, transparent, rgb(255 255 255 / 0.9), transparent);
+  filter: drop-shadow(0 0 6px rgb(169 150 255 / 0.9));
+}
+
+/* Kept for the pages that still use the original single-layer field. */
 @utility starfield {
   background-image:
     radial-gradient(1px 1px at 8% 12%, rgb(255 255 255 / 0.8), transparent 60%),
@@ -372,7 +538,14 @@
   .animate-glow-pulse,
   .animate-gradient-pan,
   .animate-scroll-cue,
-  .animate-twinkle {
+  .animate-twinkle,
+  .animate-twinkle-soft,
+  .animate-twinkle-bright,
+  .animate-drift-far,
+  .animate-drift-mid,
+  .animate-drift-near,
+  .animate-nebula-shift,
+  .animate-shooting-star {
     animation: none !important;
   }
 }

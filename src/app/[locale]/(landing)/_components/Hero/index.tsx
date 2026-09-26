@@ -4,6 +4,7 @@ import AnimatedH1 from "@/components/global/AnimatedH1/AnimatedH1";
 import AnimatedCopy from "@/components/global/AnimatedCopy/AnimatedCopy";
 import AnimationContainer from "@/components/global/animation-container";
 import Orbit from "@/components/global/Orbit";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 import { NexusLogo } from "@/components/global/NexusLogo";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowUpRight } from "lucide-react";
@@ -18,7 +19,7 @@ export default function Hero() {
   return (
     <section className="relative isolate min-h-[100svh] w-full overflow-hidden cosmos-bg">
       {/* Deep-space backdrop */}
-      <div aria-hidden="true" className="starfield absolute inset-0 opacity-70 animate-twinkle" />
+      <GalaxyBackground />
       <div
         aria-hidden="true"
         className="absolute -left-48 -top-48 size-[640px] rounded-full bg-brand-indigo/30 blur-[160px] animate-glow-pulse"
