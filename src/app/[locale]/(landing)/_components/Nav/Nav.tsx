@@ -13,6 +13,7 @@ import LanguageToggle from "@/components/global/LanguajeToggle";
 import { useTranslations } from "next-intl";
 import { Menu } from "@/types";
 import { SOCIAL_LINKS } from "@/data/socials";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 
 const Nav = () => {
@@ -339,7 +340,7 @@ const Nav = () => {
         ref={menuOverlayRef}
       >
         {/* Deep-space decoration */}
-        <div aria-hidden="true" className="starfield absolute inset-0 opacity-60" />
+        <GalaxyBackground variant="section" />
         <div aria-hidden="true" className="absolute -left-40 -top-40 size-[520px] rounded-full bg-brand-indigo/25 blur-[140px]" />
         <div aria-hidden="true" className="absolute -right-32 -bottom-40 size-[480px] rounded-full bg-brand-gold/10 blur-[140px]" />
         <Orbit className="absolute left-1/2 top-1/2 size-[135vmin] -translate-x-1/2 -translate-y-1/2" duration={90} opacity={0.55} />

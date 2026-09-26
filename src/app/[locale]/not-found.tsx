@@ -6,6 +6,7 @@ import { buttonVariants } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 
 export const metadata = {
@@ -20,7 +21,7 @@ export default function NotFound() {
 
   return (
     <div className="relative flex min-h-[100svh] w-full items-center justify-center overflow-hidden cosmos-bg px-5">
-      <div aria-hidden="true" className="starfield absolute inset-0 opacity-60" />
+      <GalaxyBackground variant="full" />
       <div aria-hidden="true" className="absolute left-1/2 top-1/2 size-[70vmin] -translate-x-1/2 -translate-y-1/2 rounded-full bg-brand-violet/20 blur-[140px]" />
       <Orbit className="absolute left-1/2 top-1/2 size-[110vmin] -translate-x-1/2 -translate-y-1/2" duration={80} opacity={0.45} />
 

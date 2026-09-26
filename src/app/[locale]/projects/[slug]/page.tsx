@@ -15,6 +15,7 @@ import { Badge } from '@/components/ui/badge';
 import { useTranslations } from 'next-intl';
 import ImageViewer from '../_components/ImageViewer';
 import { ProjectGallery } from '@/types';
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 // Alternating frames echo the logo sweep: violet → blue and gold → violet.
 const FRAMES = [
@@ -139,7 +140,7 @@ function Page() {
     return (
       <main ref={container} className="relative mb-20">
         <div className="relative overflow-hidden cosmos-bg">
-          <div aria-hidden="true" className="starfield absolute inset-0 opacity-60" />
+          <GalaxyBackground variant="full" className="h-[130vh]" />
           <div aria-hidden="true" className="absolute -left-40 -top-52 size-[420px] rounded-full bg-brand-indigo/25 blur-[130px]" />
           <Orbit className="absolute -right-[30vw] -top-[20vw] size-[70vw] lg:-right-[14vw] lg:size-[44vw]" duration={110} opacity={0.35} />
           <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background" />

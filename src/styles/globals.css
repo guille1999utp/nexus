@@ -52,11 +52,6 @@
   100% { transform: translateY(220%); }
 }
 
-@keyframes twinkle {
-  0%, 100% { opacity: 0.35; }
-  50% { opacity: 0.8; }
-}
-
 /* Parallax drift. Each layer travels exactly one tile, so the loop is seamless. */
 @keyframes drift-far {
   to { transform: translate3d(-820px, 820px, 0); }
@@ -108,7 +103,6 @@
   --animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
   --animate-gradient-pan: gradient-pan 6s linear infinite;
   --animate-scroll-cue: scroll-cue 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
-  --animate-twinkle: twinkle 5s ease-in-out infinite;
   --animate-drift-far: drift-far 600s linear infinite;
   --animate-drift-mid: drift-mid 380s linear infinite;
   --animate-drift-near: drift-near 240s linear infinite;
@@ -490,22 +484,6 @@
   filter: drop-shadow(0 0 6px rgb(169 150 255 / 0.9));
 }
 
-/* Kept for the pages that still use the original single-layer field. */
-@utility starfield {
-  background-image:
-    radial-gradient(1px 1px at 8% 12%, rgb(255 255 255 / 0.8), transparent 60%),
-    radial-gradient(1px 1px at 22% 68%, rgb(255 255 255 / 0.55), transparent 60%),
-    radial-gradient(1.5px 1.5px at 37% 28%, rgb(169 150 255 / 0.8), transparent 60%),
-    radial-gradient(1px 1px at 51% 84%, rgb(255 255 255 / 0.5), transparent 60%),
-    radial-gradient(1px 1px at 64% 16%, rgb(255 255 255 / 0.7), transparent 60%),
-    radial-gradient(1.5px 1.5px at 78% 52%, rgb(255 218 156 / 0.75), transparent 60%),
-    radial-gradient(1px 1px at 90% 78%, rgb(255 255 255 / 0.6), transparent 60%),
-    radial-gradient(1px 1px at 14% 92%, rgb(255 255 255 / 0.45), transparent 60%),
-    radial-gradient(1px 1px at 45% 50%, rgb(255 255 255 / 0.35), transparent 60%);
-  background-size: 620px 620px, 620px 620px, 620px 620px, 410px 410px, 410px 410px, 820px 820px, 410px 410px, 820px 820px, 290px 290px;
-  background-repeat: repeat;
-}
-
 /* ------------------------------------------------------------------ */
 /*  Scrollbar                                                          */
 /* ------------------------------------------------------------------ */
@@ -538,7 +516,6 @@
   .animate-glow-pulse,
   .animate-gradient-pan,
   .animate-scroll-cue,
-  .animate-twinkle,
   .animate-twinkle-soft,
   .animate-twinkle-bright,
   .animate-drift-far,

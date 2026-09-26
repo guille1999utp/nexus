@@ -11,6 +11,7 @@ import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef } from 'react';
 import ScrollToTopButton from '@/components/global/top-button'
 import { useTranslations } from 'next-intl'
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 
 function Projects() {
@@ -31,7 +32,7 @@ function Projects() {
     <main className="relative overflow-hidden" ref={container}>
       <Nav />
       <div className="relative cosmos-bg">
-        <div aria-hidden="true" className="starfield absolute inset-0 opacity-60" />
+        <GalaxyBackground variant="full" className="h-[130vh]" />
         <div aria-hidden="true" className="absolute -left-40 -top-40 size-[560px] rounded-full bg-brand-indigo/25 blur-[150px]" />
         <Orbit className="absolute -right-[30vw] -top-[18vw] size-[70vw] lg:-right-[14vw] lg:size-[46vw]" duration={110} opacity={0.35} />
         <div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-40 bg-linear-to-b from-transparent to-background" />

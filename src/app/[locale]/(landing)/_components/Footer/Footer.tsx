@@ -15,6 +15,7 @@ import TikTokIcon from "@/components/icons/tiktok";
 import { Menu } from "@/types";
 import { SOCIAL_LINKS, SocialId } from "@/data/socials";
 import type { ComponentType } from "react";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -35,7 +36,7 @@ const Footer = () => {
   return (
     <footer className="footer relative w-full overflow-hidden rounded-t-[2rem] bg-space-950 pt-16 md:rounded-t-[3rem] md:pt-24">
       {/* Deep-space decoration */}
-      <div aria-hidden="true" className="starfield absolute inset-0 opacity-50" />
+      <GalaxyBackground variant="section" />
       <div
         aria-hidden="true"
         className="absolute -left-40 top-0 size-[560px] rounded-full bg-brand-indigo/20 blur-[160px]"

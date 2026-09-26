@@ -1,13 +1,29 @@
 import { cn } from "@/lib/utils";
 
+type GalaxyVariant = "full" | "section" | "quiet";
+
 interface GalaxyBackgroundProps {
-  /** Positioning overrides. Defaults to filling the nearest positioned ancestor. */
+  /** Extra positioning, e.g. "h-[120vh]" to cap the field on a long page. */
   className?: string;
-  /** The galactic plane sweeping across the frame. */
-  band?: boolean;
-  /** Streaks that cross the frame every few seconds. */
-  shootingStars?: boolean;
+  /**
+   * How much of the galaxy to show.
+   *
+   * - `full`: everything, for hero-sized surfaces that carry a page.
+   * - `section`: stars and gas only, for bands of content mid-page. No
+   *   galactic band, because repeating it down a page reads as a mistake.
+   * - `quiet`: dim stars only, for text-heavy pages where contrast matters.
+   */
+  variant?: GalaxyVariant;
 }
+
+const VARIANTS: Record<
+  GalaxyVariant,
+  { band: boolean; shootingStars: boolean; nebula: boolean; opacity: string }
+> = {
+  full: { band: true, shootingStars: true, nebula: true, opacity: "opacity-100" },
+  section: { band: false, shootingStars: false, nebula: true, opacity: "opacity-75" },
+  quiet: { band: false, shootingStars: false, nebula: false, opacity: "opacity-50" },
+};
 
 /**
  * Layered deep-space backdrop: nebula gas, a galactic band, and three star
@@ -25,24 +41,38 @@ interface GalaxyBackgroundProps {
  * Pure CSS on purpose: this sits behind the LCP element, so it must not pull in
  * a canvas or block paint. Every animation is transform/opacity only, and all of
  * them opt out under `prefers-reduced-motion`.
+ *
+ * Only `full` animates the nebula. Animating a blurred element forces the
+ * browser to re-run the blur every frame, which is fine for one hero but not
+ * for the several sections that share a single scroll.
  */
 export default function GalaxyBackground({
   className,
-  band = true,
-  shootingStars = true,
+  variant = "full",
 }: GalaxyBackgroundProps) {
+  const { band, shootingStars, nebula, opacity } = VARIANTS[variant];
+  const isFull = variant === "full";
+
   return (
     <div
       aria-hidden="true"
       className={cn(
         "pointer-events-none absolute inset-0 select-none overflow-hidden",
+        opacity,
         className
       )}
     >
       {/* Coloured gas, furthest back. */}
-      <div className="nebula-clouds absolute inset-[-15%] animate-nebula-shift" />
+      {nebula && (
+        <div
+          className={cn(
+            "nebula-clouds absolute inset-[-15%]",
+            isFull && "animate-nebula-shift"
+          )}
+        />
+      )}
 
-      {/* The galactic plane, tilted across the frame. */}
+      {/* The galactic plane, low and right of centre so it stays clear of copy. */}
       {band && (
         <div className="absolute left-[62%] top-[68%] h-[52vmax] w-[190vmax] -translate-x-1/2 -translate-y-1/2 -rotate-[22deg]">
           <div className="galaxy-band size-full opacity-70" />
@@ -50,7 +80,7 @@ export default function GalaxyBackground({
       )}
 
       {/* Star fields. Outer element drifts, inner twinkles. The -50% inset makes
-          each layer twice the viewport, so drifting never exposes an edge. */}
+          each layer twice its container, so drifting never exposes an edge. */}
       <div className="absolute inset-[-50%] opacity-85 animate-drift-far">
         <div className="starfield-far size-full animate-twinkle-soft" />
       </div>

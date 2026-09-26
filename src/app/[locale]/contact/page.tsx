@@ -5,6 +5,7 @@ import ContactForm from './_components/form/indexs';
 import ContactInfo from './_components/contact-info';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Orbit from '@/components/global/Orbit';
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 function ContactPage() {
 
@@ -33,7 +34,7 @@ function ContactPage() {
 
   return (
       <div ref={container} className={`relative cosmos-bg ${isOutside ? "overflow-hidden" : ""}`}>
-        <div aria-hidden="true" className="starfield absolute inset-0 opacity-60" />
+        <GalaxyBackground variant="full" className="h-[130vh]" />
         <div aria-hidden="true" className="absolute -left-40 -top-40 size-[560px] rounded-full bg-brand-indigo/25 blur-[150px]" />
         <Orbit className="absolute -left-[30vw] top-[10%] size-[70vw] lg:-left-[18vw] lg:size-[48vw]" duration={110} opacity={0.35} />
         <section className="relative mx-auto flex w-full max-w-[1440px] flex-col justify-between overflow-x-hidden px-5 pt-28 md:px-10 md:pt-32 2xl:pt-40">
