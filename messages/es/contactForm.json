@@ -1,0 +1,38 @@
+{
+    "Info": {
+        "title": "Cuéntanos sobre",
+        "title2": "tu proyecto",
+        "description": "Solo completa este sencillo formulario, revisaremos tu envío y nos pondremos en contacto contigo dentro de 24 horas para hablar sobre tu proyecto",
+        "socialTitle": "Síguenos",
+        "HateForms": "¿Odias los formularios? Escríbenos a"
+    },
+    "Form": {
+        "name": "Nombre y/o empresa",
+        "Placeholdername": "John de Apple",
+        "email": "Tu Correo Electrónico",
+        "Placeholderemail": "john@apple.com",
+        "message": "Cuéntanos mas sobre tu proyecto",
+        "PlaceholderMessage": "Algo sobre tu gran idea",
+        "buttonText": "Completa el formulario",
+        "buttonTextComplete": "Enviar solicitud",
+        "buttonTextSending": "Enviando...",
+        "InterestLabel": "Estoy interesado en...",
+        "Interests" : [
+            "Landing Pages",
+            "Software a la medida",
+            "E-Commerce Development",
+            "Diseño UI/UX Profesional",
+            "Integraciones y Automatizaciones",
+            "Rediseño de proyecto",
+            "Otros servicios"
+        ],
+        "BudgetLabel": "Presupuesto del proyecto (USD)",
+        "Budget" : [
+            "< $1.5K",
+            "$1.5K - $5K",
+            "$5K - $50K",
+            "> $50K"
+        ]
+    }
+
+}

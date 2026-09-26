@@ -1,0 +1,266 @@
+{
+  "Hero": {
+      "title": "We don't develop pages,",
+      "title2": "we create unique experiences",
+      "description": "We are digital architects who combine development, obsessive design, and personalized strategies to turn your website into sales, leads, or digital revolutions.",
+      "button": "LET'S TALK!",
+    "eyebrow": "Nexus Labs · Beyond ideas",
+    "secondaryButton": "SEE OUR WORK",
+    "scroll": "Scroll",
+    "stats": [
+      { "value": "+50", "label": "Happy clients" },
+      { "value": "+10", "label": "Years of experience" },
+      { "value": "24h", "label": "Response time" }
+    ]
+   },
+  "WhatWeDo": {
+      "title": "We do things",
+      "title2": "differently",
+      "button": "START YOUR PROJECT!",
+      "services": [
+      {
+        "number": "01",
+        "title": "Our Track Record",
+        "points": [
+          "More than 50 satisfied clients",
+          "Success stories in various industries",
+          "Personalized attention tailored to each business",
+          "Over 10 years delivering quality projects",
+          "Commitment to innovation and technological trends"
+        ]
+      },
+      {
+      "number": "02",
+      "title": "Web Development & E-commerce",
+      "points": [
+        "Custom website design and development",
+        "Online stores optimized for conversion",
+        "Integration with payment gateways and logistics",
+        "SEO and optimization for maximum speed",
+        "Constant maintenance and updates"
+      ]
+      },
+      {
+      "number": "03",
+      "title": "Custom Software",
+      "points": [
+        "Solutions designed according to your needs",
+        "Process automation for companies",
+        "Integration with existing systems",
+        "Guaranteed security and scalability",
+        "Continuous support and evolution"
+      ]
+      },
+      {
+      "number": "04",
+      "title": "UI/UX Design and Digital Experience",
+      "points": [
+        "Intuitive and attractive interfaces",
+        "User research and analysis",
+        "Advanced prototyping and wireframing",
+        "Responsive design for all devices",
+        "Optimal accessibility and usability"
+      ]
+      },
+      {
+      "number": "05",
+      "title": "AI Solutions",
+      "points": [
+        "Business process automation",
+        "Development of chatbots and virtual assistants",
+        "Content optimization with AI",
+        "Advanced personalization on digital platforms"
+      ]
+      }
+   ]
+   },
+  "Services": {
+      "title": "How can we",
+      "title2": "help you?",
+      "buttonText": "I want to register!",
+      "sections": [
+       {
+        "title": "Landing Pages",
+        "description": "Strategic and attractive design + persuasive copy = visitors converted into customers",
+        "image": "/services/landing.webp"
+       },
+       {
+        "title": "Custom Software",
+        "description": "Custom platforms or systems: technology that adapts to you, not the other way around",
+        "image": "/services/software.webp"
+       },
+       {
+        "title": "E-Commerce",
+        "description": "Online stores that sell, fast, secure, and ready to scale: turn scrolls into sales",
+        "image": "/services/ecommerce.webp"
+       },
+       {
+        "title": "UI/UX Design",
+        "description": "Intuitive interfaces + smooth experience = happy and loyal users",
+        "image": "/services/ui_design.webp"
+       }
+      ]
+   },
+  "Projects": {
+    "LinkText": "See all projects",
+    "title": "Projects",
+    "button": "See more",
+      "projects": [
+        {
+          "title": "CONTAAPP",
+          "description": "Efficient inventory management.",
+          "image": "/services/software.webp"
+        },
+        {
+          "title": "GROUPIA",
+          "description": "Platform for online community",
+          "image": "/projects/groupia/groupia1.webp"
+        },
+        {
+          "title": "MOBIEN",
+          "description": "Supporting people's well-being",
+          "image": "/projects/mobien/mobien1.webp"
+        },
+        {
+          "title": "PURA IMPRESIÓN",
+          "description": "Ecommerce store developed in Shopify",
+          "image": "/projects/puraimpresion/puraimpresion1.webp"
+        },
+        {
+          "title": "FITPUP",
+          "description": "Pet care services",
+          "image": "/projects/fitpup/fitpup_banner.webp"
+        }
+      ]
+   },
+  "Phrase": "At Nexus Labs, we create websites that not only make your brand unique but also generate real results",
+  "Stack": {
+    "title": "Our stack",
+    "title2": "technology",
+    "description": "We work with cutting-edge technologies and tools to deliver robust, secure, and scalable solutions. From cloud platforms to custom development and e-commerce stores, we create optimized digital experiences for your success."
+  },
+  "Steps": {
+        "title": "Our",
+        "title2": "Process",
+        "description": "Our process is designed to ensure the highest quality and efficiency at every stage. From initial planning to final delivery, we make sure every detail is carefully considered and executed.",
+        "buttonText": "Start Today",
+        "steps": [
+            {
+                "title": "Contact",
+                "description": "You send us a detailed project brief.",
+                "image": "/steps/process-1.webp"
+            },
+            {
+                "title": "Quote",
+                "description": "We thoroughly analyze the project and send you a quote to carry out the work.",
+                "image": "/steps/process-2.webp"
+            },
+            {
+                "title": "Approval",
+                "description": "Once you accept the quote, we ask for all the necessary information to start working.",
+                "image": "/steps/process-3.webp"
+            },
+            {
+                "title": "Feedback",
+                "description": "As we progress, we will send you updates to receive feedback.",
+                "image": "/steps/process-4.webp"
+            },
+            {
+                "title": "Launch",
+                "description": "We deliver the project without setbacks and with a result that will exceed your expectations.",
+                "image": "/steps/process-5.webp"
+            }
+        ]
+    },
+    "Faqs": {
+      "title": "Still have",
+      "title2": "questions?",
+      "description": "Here are some answers to the most frequently asked questions. If you don't find what you're looking for, feel free to contact us.",
+      "buttonText": "CONTACT US!",
+      "faqs": [
+        {
+          "question": "Why is web design important for my business?",
+          "answer": "A professional web design is your best 24/7 salesperson. It enhances first impressions, increases credibility, improves search engine visibility, and converts visitors into customers. A well-designed website can boost your brand’s perceived quality by up to 80%, according to Stanford studies."
+      },
+      {
+          "question": "How long does it take to design a website?",
+          "answer": "We create custom websites in 1-3 weeks, depending on complexity. We work in agile phases: strategic planning (1 week), custom design (1-2 weeks), and technical development (1-3 weeks). You'll see visible progress from the very first week!"
+      },
+      {
+          "question": "What information do I need to provide to start building my website?",
+          "answer": "We need three key elements: 1) Business information (mission, values, target audience), 2) Branding materials (logo, colors, fonts), and 3) Basic content (photos, descriptive texts)."
+      },
+      {
+          "question": "Do you provide ongoing support after launch?",
+          "answer": "Yes, we offer support and post-launch maintenance plans to ensure your website stays up-to-date and performs optimally."
+      },
+      {
+          "question": "What services do you offer?",
+          "answer": "We provide tailored digital solutions, including landing page and website design and development, as well as custom software. We also create intuitive UI/UX designs, develop custom CRMs, integrate artificial intelligence into your processes, and optimize eCommerce stores with Shopify. Additionally, we implement automations and workflow optimizations using various tools and AI to enhance your business efficiency. Let's take your project to the next level! 🚀"
+      },
+      {
+          "question": "What if I don't like the delivered design?",
+          "answer": "Throughout the project, we maintain constant communication and gather your feedback to ensure the final result meets your expectations. Once the website is delivered, you’ll have a revision available for any minor modifications you may need."
+      },
+      {
+          "question": "Can you help me with SEO?",
+          "answer": "Although our main focus is on design and development, we always aim to optimize your site's basic SEO and provide guidance to improve its visibility."
+      }
+      ]
+    },
+    "Footer": {
+      "title": "Content delivered to your inbox",
+      "label": "Enter your email",
+      "subscribeButton": "Subscribe",
+      "privacyPolicy": "Privacy Policy",
+      "termsOfService": "Terms of Service",
+      "contact": "CONTACT US",
+      "solution": "SOLUTIONS",
+      "anymoment" : "AT ANY TIME",
+      "solutions": [
+        "Web Pages",
+        "E-commerce",
+        "SEO Optimization",
+        "UI/UX Design",
+        "Custom Software",
+        "Integrations and Automations"
+      ],
+      "logoTextComplete": "Nexus Labs",
+      "logoText1": "Nexus",
+      "logoText2": "Labs",
+      "rights": "All rights reserved",
+      "by": "By NEXUS LABS",
+      "tagline": "Beyond ideas",
+      "ctaTitle": "Ready to go beyond?",
+      "ctaDescription": "Tell us your idea and we will turn it into a digital product that works.",
+      "ctaButton": "LET'S TALK",
+      "navigation": "NAVIGATION",
+      "social": "FOLLOW US"
+    },
+    "Sections": {
+    "expertise": "Why Nexus",
+    "services": "Services",
+    "projects": "Projects",
+    "stack": "Technology",
+    "process": "Process",
+    "faq": "FAQ"
+  },
+  "Menu": {
+      "options": [
+        {
+          "name": "Home",
+          "link": "/"
+        },
+        {
+          "name": "Projects",
+          "link": "/projects"
+        },
+        {
+          "name": "Contact",
+          "link": "/contact"
+        }
+      ],
+      "close": "CLOSE",
+    "open": "Menu"
+    }
+  }

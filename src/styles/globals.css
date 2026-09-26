@@ -1,0 +1,378 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ------------------------------------------------------------------ */
+/*  Keyframes                                                          */
+/* ------------------------------------------------------------------ */
+
+@keyframes accordion-down {
+  from { height: 0; }
+  to { height: var(--radix-accordion-content-height); }
+}
+
+@keyframes accordion-up {
+  from { height: var(--radix-accordion-content-height); }
+  to { height: 0; }
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(calc(-100% - var(--gap))); }
+}
+
+@keyframes marquee-vertical {
+  from { transform: translateY(0); }
+  to { transform: translateY(calc(-100% - var(--gap))); }
+}
+
+@keyframes orbit-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes float-y {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-14px); }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { opacity: 0.55; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.06); }
+}
+
+@keyframes gradient-pan {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
+}
+
+@keyframes scroll-cue {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(220%); }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 0.8; }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Theme tokens → Tailwind utilities                                  */
+/* ------------------------------------------------------------------ */
+
+@theme inline {
+  --animate-accodion-down: accordion-down 0.2s ease-out;
+  --animate-accodion-up: accordion-up 0.2s ease-out;
+  --animate-marquee: marquee var(--duration) linear infinite;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  --animate-orbit-spin: orbit-spin 60s linear infinite;
+  --animate-float-y: float-y 7s ease-in-out infinite;
+  --animate-glow-pulse: glow-pulse 6s ease-in-out infinite;
+  --animate-gradient-pan: gradient-pan 6s linear infinite;
+  --animate-scroll-cue: scroll-cue 1.8s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  --animate-twinkle: twinkle 5s ease-in-out infinite;
+
+  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-heading), var(--font-body), ui-sans-serif, sans-serif;
+
+  /* Nexus brand palette (sampled from the logo) */
+  --color-space-950: var(--space-950);
+  --color-space-900: var(--space-900);
+  --color-space-850: var(--space-850);
+  --color-space-800: var(--space-800);
+  --color-space-700: var(--space-700);
+  --color-space-600: var(--space-600);
+  --color-brand-violet: var(--brand-violet);
+  --color-brand-indigo: var(--brand-indigo);
+  --color-brand-blue: var(--brand-blue);
+  --color-brand-lavender: var(--brand-lavender);
+  --color-brand-gold: var(--brand-gold);
+  --color-brand-gold-light: var(--brand-gold-light);
+
+  /* shadcn semantic tokens */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-fullscreen-nav: var(--fullscreen-nav);
+  --color-nav: var(--nav);
+
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+
+  --drop-shadow-card: var(--shadow-card);
+  --drop-shadow-card-alt: var(--shadow-card-alt);
+}
+
+/* The site is dark-only: the Nexus logo is designed for deep navy backgrounds. */
+:root {
+  color-scheme: dark;
+  --radius: 0.875rem;
+
+  --space-950: #02051a;
+  --space-900: #040a2c;
+  --space-850: #060e3a;
+  --space-800: #0a1548;
+  --space-700: #111d5c;
+  --space-600: #1a2873;
+
+  --brand-violet: #6e39fd;
+  --brand-indigo: #583afc;
+  --brand-blue: #2e6cff;
+  --brand-lavender: #a996ff;
+  --brand-gold: #e7b377;
+  --brand-gold-light: #ffda9c;
+
+  --background: var(--space-900);
+  --foreground: #eef0ff;
+  --card: var(--space-800);
+  --card-foreground: #eef0ff;
+  --popover: var(--space-800);
+  --popover-foreground: #eef0ff;
+  --primary: var(--brand-violet);
+  --primary-foreground: #ffffff;
+  --secondary: var(--space-700);
+  --secondary-foreground: #eef0ff;
+  --muted: var(--space-800);
+  --muted-foreground: #a1a9dc;
+  --accent: var(--brand-gold);
+  --accent-foreground: var(--space-900);
+  --destructive: #ff6b8a;
+  --border: rgb(255 255 255 / 0.1);
+  --input: rgb(255 255 255 / 0.14);
+  --ring: var(--brand-violet);
+  --fullscreen-nav: var(--space-950);
+  --nav: #eef0ff;
+
+  --shadow-card: 0 24px 40px rgb(2 5 26 / 0.65);
+  --shadow-card-alt: 0 12px 28px rgb(110 57 253 / 0.45);
+}
+
+/* ------------------------------------------------------------------ */
+/*  Base                                                               */
+/* ------------------------------------------------------------------ */
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  html {
+    background-color: var(--background);
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  ::selection {
+    background: rgb(110 57 253 / 0.55);
+    color: #fff;
+  }
+
+  h1,
+  h2,
+  h3 {
+    position: relative;
+    font-family: var(--font-heading), var(--font-body), ui-sans-serif, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--foreground);
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 5.2vw, 5.5rem);
+    line-height: 1.04;
+  }
+
+  h2 {
+    font-size: clamp(1.75rem, 3.6vw, 3.5rem);
+    line-height: 1.08;
+  }
+
+  h3 {
+    font-size: clamp(1.125rem, 1.8vw, 1.625rem);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  p {
+    position: relative;
+    line-height: 1.6;
+  }
+
+  a {
+    position: relative;
+    text-decoration: none;
+  }
+}
+
+@layer components {
+  .page {
+    width: 100%;
+    height: 100%;
+    min-height: 100svh;
+    overflow: hidden;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+
+  .body-modal-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/* ------------------------------------------------------------------ */
+/*  Brand utilities                                                    */
+/* ------------------------------------------------------------------ */
+
+/* Violet → blue → gold, the same sweep as the "N" in the logo. */
+@utility brand-gradient-text {
+  background-image: linear-gradient(
+    100deg,
+    var(--brand-lavender) 0%,
+    var(--brand-violet) 32%,
+    var(--brand-blue) 64%,
+    var(--brand-gold) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility gold-gradient-text {
+  background-image: linear-gradient(100deg, var(--brand-gold-light), var(--brand-gold) 55%, var(--brand-lavender));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@utility brand-gradient-bg {
+  background-image: linear-gradient(110deg, var(--brand-violet) 0%, var(--brand-blue) 55%, var(--brand-violet) 100%);
+  background-size: 200% 100%;
+}
+
+/* Gradient hairline border that keeps the element's own (possibly translucent) background. */
+@utility gradient-ring {
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: var(--ring-width, 1px);
+    border-radius: inherit;
+    background: linear-gradient(
+      135deg,
+      var(--brand-lavender) 0%,
+      var(--brand-violet) 30%,
+      rgb(46 108 255 / 0.35) 60%,
+      var(--brand-gold) 100%
+    );
+    -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: 1;
+  }
+}
+
+@utility glass-panel {
+  background-color: rgb(6 14 58 / 0.65);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+  border: 1px solid rgb(255 255 255 / 0.08);
+}
+
+/* Small uppercase, widely tracked label, like the "Más allá de las ideas" tagline. */
+@utility eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  line-height: 1.4;
+  font-weight: 400;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+@utility cosmos-bg {
+  background-color: var(--space-900);
+  background-image:
+    radial-gradient(60% 50% at 12% 8%, rgb(88 58 252 / 0.22), transparent 70%),
+    radial-gradient(50% 45% at 92% 92%, rgb(231 179 119 / 0.1), transparent 70%),
+    radial-gradient(70% 60% at 50% 40%, rgb(7 19 77 / 0.9), transparent 80%);
+}
+
+@utility starfield {
+  background-image:
+    radial-gradient(1px 1px at 8% 12%, rgb(255 255 255 / 0.8), transparent 60%),
+    radial-gradient(1px 1px at 22% 68%, rgb(255 255 255 / 0.55), transparent 60%),
+    radial-gradient(1.5px 1.5px at 37% 28%, rgb(169 150 255 / 0.8), transparent 60%),
+    radial-gradient(1px 1px at 51% 84%, rgb(255 255 255 / 0.5), transparent 60%),
+    radial-gradient(1px 1px at 64% 16%, rgb(255 255 255 / 0.7), transparent 60%),
+    radial-gradient(1.5px 1.5px at 78% 52%, rgb(255 218 156 / 0.75), transparent 60%),
+    radial-gradient(1px 1px at 90% 78%, rgb(255 255 255 / 0.6), transparent 60%),
+    radial-gradient(1px 1px at 14% 92%, rgb(255 255 255 / 0.45), transparent 60%),
+    radial-gradient(1px 1px at 45% 50%, rgb(255 255 255 / 0.35), transparent 60%);
+  background-size: 620px 620px, 620px 620px, 620px 620px, 410px 410px, 410px 410px, 820px 820px, 410px 410px, 820px 820px, 290px 290px;
+  background-repeat: repeat;
+}
+
+/* ------------------------------------------------------------------ */
+/*  Scrollbar                                                          */
+/* ------------------------------------------------------------------ */
+
+::-webkit-scrollbar {
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--space-950);
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, var(--brand-violet), var(--brand-blue) 60%, var(--brand-gold));
+  border-radius: 0.25rem;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-orbit-spin,
+  .animate-float-y,
+  .animate-glow-pulse,
+  .animate-gradient-pan,
+  .animate-scroll-cue,
+  .animate-twinkle {
+    animation: none !important;
+  }
+}

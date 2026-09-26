@@ -1,0 +1,14 @@
+{
+    "ProjectPage": {
+        "title": "Nuestros trabajos realizados",
+        "description": "Hemos trabajado con una variedad de clientes para llevar sus ideas a la realidad, ofreciendo soluciones personalizadas y de alta calidad."
+    },
+    "Project": {
+        "about": "un poco sobre",
+        "release": "Lanzamiento",
+        "solution": "Solución",
+        "ourWork": "Nuestro trabajo",
+        "viewProject": "VER PROYECTO"
+    }
+
+}

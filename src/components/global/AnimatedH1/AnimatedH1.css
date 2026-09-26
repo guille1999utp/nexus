@@ -1,0 +1,46 @@
+/* Line wrappers: extended downwards so descenders (g, p, y) are not clipped. */
+.animated-h1 [class^="line-"] {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+}
+
+.animated-h1 [class^="line-inner-"] {
+  position: relative;
+  display: block;
+  overflow: visible;
+  clip-path: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  will-change: transform;
+}
+
+/* Brand gradient (violet → blue → gold) applied per line. */
+.animated-h1.gradient-lines [class^="line-inner-"] {
+  display: inline-block !important;
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+  background-image: linear-gradient(
+    100deg,
+    var(--brand-lavender) 0%,
+    var(--brand-violet) 34%,
+    var(--brand-blue) 68%,
+    var(--brand-gold) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Engraved wordmark: white fading into the background, per line. */
+.animated-h1.fade-lines [class^="line-inner-"] {
+  display: inline-block !important;
+  padding-bottom: 0.16em;
+  margin-bottom: -0.16em;
+  background-image: linear-gradient(180deg, rgb(238 240 255 / 0.95) 0%, rgb(169 150 255 / 0.55) 55%, rgb(169 150 255 / 0.04) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

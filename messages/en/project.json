@@ -1,0 +1,13 @@
+{
+    "ProjectPage": {
+        "title": "Our completed works",
+        "description": "We have worked with a variety of clients to bring their ideas to life, offering customized and high-quality solutions."
+    },
+    "Project": {
+        "about": "a little about",
+        "release": "Release",
+        "solution": "Solution",
+        "ourWork": "Our work",
+        "viewProject": "VIEW PROJECT"
+    }
+}

@@ -1,0 +1,37 @@
+{
+    "Info": {
+        "title": "Tell us about",
+        "title2": "your project",
+        "description": "Just fill out this simple form, we will review your submission and get in touch with you within 24 hours to talk about your project",
+        "socialTitle": "Follow us",
+        "HateForms": "Hate forms? Write to us at"
+    },
+    "Form": {
+        "name": "Name and/or company",
+        "Placeholdername": "John from Apple",
+        "email": "Your Email",
+        "Placeholderemail": "john@apple.com",
+        "message": "Tell us more about your project",
+        "PlaceholderMessage": "Something about your great idea",
+        "buttonText": "Complete the form",
+        "buttonTextComplete": "Send request",
+        "buttonTextSending": "Sending...",
+        "InterestLabel": "I'm interested in...",
+        "Interests": [
+            "Landing Pages",
+            "Custom Software",
+            "E-Commerce Development",
+            "Professional UI/UX Design",
+            "Integrations and Automations",
+            "Project Redesign",
+            "Other services"
+        ],
+        "BudgetLabel": "Project budget (USD)",
+        "Budget": [
+            "< $1.5K",
+            "$1.5K - $5K",
+            "$5K - $50K",
+            "> $50K"
+        ]
+    }
+}

@@ -1,0 +1,390 @@
+{
+  "ProjectsDone": [
+    {
+      "id": 9,
+      "title": "Colombia’s First Legal Subscription Platform",
+      "companyName": "Legal Aid",
+      "description": "A SaaS platform providing 24/7 AI-powered legal assistance, monthly subscription plans, and smart scheduling for specialized legal consultations.",
+      "categories": ["AI_INTEGRATION", "LANDING", "CRM", "UI_UX"],
+      "imageUrl": "/projects/legalaid/legalaid_banner.webp",
+      "url": "https://www.legalaidcol.com",
+      "releaseDate": "MARCH, 2025",
+      "about": [
+        "Legal Aid is Colombia’s first legal subscription service — an innovative platform built on the belief that justice should be a right for all, not a privilege for the few who can afford it.",
+        "In a region marked by deep inequalities, Legal Aid disrupts the traditional legal model by offering high-quality legal advice and representation through affordable monthly plans — without hidden fees or economic barriers.",
+        "Born from a commitment to more humane justice, Legal Aid blends technology, artificial intelligence, and people-first design to provide legal support to both individuals and businesses.",
+        "The platform delivers a complete digital legal ecosystem, including a 24/7 AI legal assistant, specialized lawyer scheduling, legal case management, and access to multiple legal practice areas from a single user-friendly interface."
+      ],
+      "solution": [
+        "We developed a complete ecosystem using Next.js, Supabase, and PostgreSQL, deployed on Vercel for high scalability and uptime.",
+        "Implemented a 24/7 AI-powered legal assistant capable of answering legal questions, analyzing documents, and drafting legal texts in real time.",
+        "Built a legal plan subscription system that offers a defined number of consultations per practice area, such as family, civil, labor, criminal, and consumer law.",
+        "Created a smart scheduling system for booking appointments with specialized lawyers, integrated with Google Calendar for virtual or in-person meetings.",
+        "Developed a legal case management module that allows users to document legal processes, upload files, track case stages, generate reports, and assign attorneys.",
+        "Included an advanced admin dashboard to configure AI knowledge (FAQs, laws, files), manage users, legal areas, metrics, and payment tracking.",
+        "Added features for automatic renewals, payment history, co-pay management, and consultation usage tracking by legal line."
+      ],
+      "features": [
+        "24/7 AI Legal Assistant",
+        "Legal Subscription Plans by Practice Area",
+        "Smart Scheduling with Specialized Lawyers",
+        "Full Legal Case Management and PDF Reporting",
+        "Document Analysis Capabilities",
+        "Admin Panel with AI Configuration and Content Control",
+        "Billing History and Auto-Renewal Settings",
+        "Co-Payment Support for Legal Representation",
+        "Real-Time Metrics and User Analytics Dashboard"
+      ],
+      "imageGallery": [
+        "/projects/legalaid/legalaid1.webp",
+        "/projects/legalaid/legalaid2.webp",
+        "/projects/legalaid/legalaid3.webp",
+        "/projects/legalaid/legalaid4.webp",
+        "/projects/legalaid/legalaid5.webp",
+        "/projects/legalaid/legalaid6.webp",
+        "/projects/legalaid/legalaid7.webp"
+      ],
+      "slug": "legal-aid-prepagada-juridica",
+      "size": "large"
+    },
+
+    {
+      "id": 1,
+      "title": "Personalized Pet Care Services",
+      "companyName": "FITPup",
+      "description": "A visually engaging and user-friendly landing page for FITPup, a premium pet care service provider.",
+      "categories": ["LANDING", "UI_UX"],
+      "imageUrl": "/projects/fitpup/fitpup_banner.webp",
+      "url": "https://www.fitpuppb.com/",
+      "releaseDate": "OCTOBER, 2024",
+      "about": [
+        "FITPup is a provider of personalized pet care services focused on animal health and well-being. With over 25 years of experience, they offer services such as walking, training, nutrition plans, and transportation in Palm Beach and its surroundings.",
+        "FITPup is located in Palm Beach and serves clients throughout the surrounding area, providing exclusive services to ensure the well-being of pets.",
+        "Their mission is to provide high-quality care with a personalized approach, ensuring that each pet receives the best possible care tailored to their specific needs.",
+        "FITPup combines professionalism with a passion for animals, creating a community of pet owners who trust their services to improve their furry companions' quality of life."
+      ],
+      "solution": [
+        "For the creation of the landing page, we worked closely with the FITPup team to capture the essence of their brand and convey their message clearly and attractively.",
+        "A fresh and dynamic design was chosen, incorporating animated visual elements, vibrant colors, and an intuitive structure to enhance user experience.",
+        "The landing page features an eye-catching hero section, a frequently asked questions (FAQ) section, a carousel of highlighted services, and a multimedia gallery with photos and videos of pets cared for by FITPup.",
+        "We implemented a blog powered by Sanity, allowing FITPup to share tips and updates on pet care.",
+        "A multi-step online form was developed for users to request services. The form guides pet owners through different stages: acceptance of terms and conditions with a digital signature, owner and contact information, veterinary details, and pet profile registration, including vaccination documents.",
+        "For form submission management, we used Resend, ensuring FITPup receives all information in real time, including attached files and the client's signature.",
+        "Optimizations were applied to improve loading speed, making it fast and efficient across all devices."
+      ],
+      "features": [
+        "Responsive Design",
+        "SEO Optimization",
+        "Smooth Transitions & Animations",
+        "Multi-step Online Form with Digital Signature",
+        "Blog powered by Sanity",
+        "Photo & Video Gallery",
+        "Fast Loading Speeds",
+        "Cross-Browser Compatibility",
+        "Email Notifications via Resend"
+      ],
+      "imageGallery": [
+        "/projects/fitpup/fitpup_banner.webp",
+        "/projects/fitpup/fitpup1.webp",
+        "/projects/fitpup/fitpup2.webp",
+        "/projects/fitpup/fitpup3.webp",
+        "/projects/fitpup/fitpup4.webp"
+      ],
+      "slug": "fitpup-landing-page",
+      "size": "large"
+    },
+    {
+      "id": 2,
+      "title": "Comprehensive Wellness Platform",
+      "companyName": "Mobien",
+      "description": "A modern and attractive landing page for Mobien, a comprehensive wellness platform that combines education, finance, and health.",
+      "categories": ["LANDING", "UI_UX"],
+      "imageUrl": "/projects/mobien/mobien1.webp",
+      "url": "https://mobien.vercel.app/",
+      "releaseDate": "AUGUST, 2024",
+      "about": [
+        "Mobien is an innovative platform designed to help people achieve their personal goals and transform their lives through educational, financial, and wellness tools.",
+        "With a focus on continuous improvement, Mobien offers motivational content, financial advice, and health strategies that empower its community.",
+        "Its mission is to provide accessible and valuable resources so that users can achieve a balanced and healthy life by combining education and technology.",
+        "Mobien seeks to inspire its users through its YouTube channel, where it shares valuable content on personal growth, financial education, and physical and mental well-being."
+      ],
+      "solution": [
+        "For the construction of Mobien's landing page, we developed a modern and vibrant design with neon green and bluish colors, conveying a sense of innovation and energy.",
+        "We implemented an attractive hero section that captures the user's attention from the first moment, reinforcing the brand's identity and its central message.",
+        "The YouTube API was integrated to automatically display the latest videos published on Mobien's channel, keeping the page updated and dynamic.",
+        "We included a sticky cards section highlighting the different services and values that Mobien offers, providing an interactive and clear experience for visitors.",
+        "The landing page features a responsive design, ensuring a smooth experience across mobile devices, tablets, and desktops.",
+        "Loading optimizations were applied to ensure the page is fast and efficient, offering seamless navigation.",
+        "A light and dark mode (Light/Dark Mode) was incorporated to enhance accessibility and personalize the user experience.",
+        "It includes a subscription form to capture leads and keep the audience updated with the latest news and offers, managed through Resend."
+      ],
+      "features": [
+        "Responsive Design",
+        "SEO Optimization",
+        "YouTube API Integration",
+        "Sticky Cards for Services",
+        "Dark & Light Mode Support",
+        "Fast Loading Speeds",
+        "Cross-Browser Compatibility",
+        "Subscription Form via Resend"
+      ],
+      "imageGallery": [
+        "/projects/mobien/mobien1.webp",
+        "/projects/mobien/mobien2.webp",
+        "/projects/mobien/mobien3.webp",
+        "/projects/mobien/mobien4.webp",
+        "/projects/mobien/mobien5.webp"
+      ],
+      "slug": "mobien-landing-page",
+      "size": "small"
+    },
+    {
+      "id": 3,
+      "title": "Bringing Communities Together",
+      "companyName": "GroupIA",
+      "description": "A modern and attractive landing page for a platform that enables the creation of communities and courses, enhanced with artificial intelligence.",
+      "categories": ["LANDING", "UI_UX", "CRM", "AI_INTEGRATION"],
+      "imageUrl": "/projects/groupia/groupia1.webp",
+      "url": "https://group-ia.vercel.app/",
+      "releaseDate": "JANUARY, 2025",
+      "about": [
+        "GroupIA is a vibrant platform designed to facilitate the creation of online communities, allowing users to connect, collaborate, and strengthen their relationships.",
+        "Inspired by platforms like Skool but with significant improvements, GroupIA incorporates artificial intelligence to automate and optimize community and course management.",
+        "Users can integrate various social networks, set up automation workflows with AI agents, and customize their community with advanced administration tools.",
+        "With an intuitive and modern interface, GroupIA provides all the necessary tools to manage courses, discussion forums, and multiple communication channels in a single platform."
+      ],
+      "solution": [
+        "For the development of GroupIA’s landing page, a modern interface was designed with a combination of orange, black, and white colors, adapting to both light and dark modes.",
+        "The page is fully responsive, offering an optimal experience on any device and ensuring smooth and engaging navigation.",
+        "It features a highly interactive hero section with dynamic 3D effects and animated spheres that capture the user's attention from the first moment.",
+        "Several informative sections highlight the platform's benefits, emphasizing the ability to create private communities, customized courses, and AI-powered tools.",
+        "A translation API integration was implemented to support multiple languages, allowing users to easily switch between English and Spanish.",
+        "Additionally, the landing page is optimized for SEO, ensuring high performance in search engines and improving the platform’s visibility.",
+        "It includes a sign-up and login form that allows users to subscribe and start using the platform, with customization options and pricing plans tailored to each community's needs.",
+        "A subscription via Resend was added to capture leads and keep users informed about updates and new features."
+      ],
+      "features": [
+        "Responsive Design",
+        "SEO Optimization",
+        "Dark & Light Mode Support",
+        "3D Interactive Elements in Hero Section",
+        "Multilingual Support (English & Spanish)",
+        "AI-Powered Community & Course Management",
+        "Social Media Integration",
+        "Customizable Pricing Plans",
+        "Automated Workflows with AI Agents"
+      ],
+      "imageGallery": [
+        "/projects/groupia/groupia1.webp",
+        "/projects/groupia/groupia2.webp",
+        "/projects/groupia/groupia3.webp",
+        "/projects/groupia/groupia4.webp",
+        "/projects/groupia/groupia5.webp",
+        "/projects/groupia/groupia6.webp",
+        "/projects/groupia/groupia7.webp"
+      ],
+      "slug": "groupia-landing-page",
+      "size": "medium"
+    },
+    {
+      "id": 4,
+      "title": "Intelligent Assessment Platform",
+      "companyName": "Coingenia",
+      "description": "Application for the creation and management of academic tests with personalized learning path generation.",
+      "categories": ["CRM", "AI_INTEGRATION", "UI_UX"],
+      "imageUrl": "/projects/coingenia/coingenia_banner.webp",
+      "url": "",
+      "releaseDate": "DECEMBER, 2024",
+      "about": [
+        "Coingenia allows institutions and organizations to create academic tests and efficiently assign them to their students.",
+        "Each student receives an email with their credentials upon being registered in the system.",
+        "Institutions can create test categories, upload images, and manage assessments from a centralized platform.",
+        "The system includes a dashboard to visualize student results in real-time."
+      ],
+      "solution": [
+        "We developed an intuitive platform for creating and assigning academic tests.",
+        "The system automatically notifies students via email with their usernames and passwords.",
+        "A dashboard with key metrics was implemented to analyze student performance.",
+        "The software generates personalized learning paths at the end of each technical test, allowing students to study only what they need to improve."
+      ],
+      "features": [
+        "Test Management",
+        "Automated Notifications",
+        "Results Dashboard",
+        "Customizable Assessments",
+        "Personalized Learning Path Generation"
+      ],
+      "imageGallery": [
+        "/projects/coingenia/coingenia_banner.webp",
+        "/projects/coingenia/coin1.webp",
+        "/projects/coingenia/coin2.webp",
+        "/projects/coingenia/coincel.webp",
+        "/projects/coingenia/coin4.webp"
+      ],
+      "slug": "coingenia-plataforma-evaluaciones",
+      "size": "medium"
+    },
+    {
+      "id": 5,
+      "title": "Intelligent Route and Vehicle Management",
+      "companyName": "Localizamos",
+      "description": "Platform for managing routes, vehicles, and drivers with automated assignments and detailed reports.",
+      "categories": ["CRM"],
+      "imageUrl": "/projects/localizamos/loc_banner.webp",
+      "url": "",
+      "releaseDate": "DECEMBER, 2024",
+      "about": [
+        "Localizamos allows administrators to create multiple entities, each with its own fleet of vehicles, routes, and drivers.",
+        "Entities can assign drivers to a specific vehicle and route with their respective operating schedule.",
+        "Drivers can log into the platform and view their assigned vehicles, as well as the route and schedule they must follow.",
+        "The platform includes a reports section where entities can review the history of completed routes and which driver carried out each one."
+      ],
+      "solution": [
+        "We developed an intuitive platform for managing and assigning vehicles, routes, and drivers.",
+        "The system allows administrators to schedule movement times and ensure better route planning.",
+        "Drivers receive clear information about their assigned vehicle and the established schedules for their route.",
+        "A detailed reporting module was implemented to analyze the history of completed routes for each driver."
+      ],
+      "features": [
+        "Entity Management",
+        "Route and Vehicle Assignment",
+        "Schedule Planning",
+        "Driver Dashboard",
+        "Route History Reports"
+      ],
+      "imageGallery": [
+        "/projects/localizamos/loc_banner.webp",
+        "/projects/localizamos/loc1.webp",
+        "/projects/localizamos/loc2.webp",
+        "/projects/localizamos/locel.webp",
+        "/projects/localizamos/loc3.webp"
+      ],
+      "slug": "localizamos-gestion-rutas-vehiculos",
+      "size": "small"
+    },
+    {
+      "id": 6,
+      "title": "AI Chatbot Integration",
+      "companyName": "24xseven",
+      "description": "AI-powered chatbot for customer support.",
+      "categories": ["AI_INTEGRATION", "LANDING"],
+      "imageUrl": "/projects/seven/7_banner.webp",
+      "url": "https://www.24xseven.com",
+      "releaseDate": "FEBRUARY, 2015",
+      "about": [
+        "ChatGenius develops intelligent chatbots to enhance customer service and automate interactions.",
+        "Our platform allows response customization and continuous learning to provide a better experience."
+      ],
+      "solution": [
+        "We designed a chatbot with natural language processing (NLP) to accurately answer questions.",
+        "Machine learning was implemented to continuously improve the chatbot's responses.",
+        "Integration with multiple platforms, including websites and social media."
+      ],
+      "imageGallery": [
+        "/projects/seven/7_banner.webp",
+        "/projects/seven/7_1.webp",
+        "/projects/seven/7_2.webp",
+        "/projects/seven/7_cel.webp",
+        "/projects/seven/7_3.webp"
+      ],
+      "features": [
+        "NLP Integration",
+        "Machine Learning",
+        "Multi-Platform Support",
+        "Customizable Responses",
+        "Data Insights"
+      ],
+      "slug": "ai-chatbot-integration",
+      "size": "small"
+    },
+    {
+      "id": 7,
+      "title": "E-commerce Store Focused on Printing, Design, and Creation",
+      "companyName": "Pura Impresión",
+      "description": "An e-commerce store developed in Shopify, specializing in personalized printing on a wide variety of products.",
+      "categories": ["ECOMMERCE", "UI_UX"],
+      "imageUrl": "/projects/puraimpresion/puraimpresion1.webp",
+      "url": "https://puraimpresion.com/",
+      "releaseDate": "FEBRUARY, 2024",
+      "about": [
+        "Pura Impresión is an online store specializing in product printing and customization for businesses and consumers.",
+        "We offer prints on various items such as canvases, pillows, tablecloths, photographs, puzzles, mousepads, and more.",
+        "Our catalog includes options such as kraft bags, non-woven bags, menu cards, die-cut stickers, hanging banners, spider banners, postcard calendars, and round stickers.",
+        "We offer nationwide shipping, ensuring a reliable and efficient shopping experience.",
+        "We have a subscription system that allows users to obtain exclusive discounts on recurring purchases.",
+        "Additionally, customers can register on our platform to manage their purchase history and access exclusive benefits."
+      ],
+      "solution": [
+        "We developed an e-commerce store with Shopify, focused on a smooth and attractive user experience.",
+        "We implemented a modern, elegant, and responsive design optimized for all devices.",
+        "Multiple payment methods were integrated, including PayPal, Visa, MasterCard, American Express, Wompi, Efecty, and Baloto.",
+        "The store was optimized for SEO, ensuring visibility in search engines and improving customer conversion.",
+        "We included a subscription system that allows users to obtain discounts and special benefits.",
+        "A login system was implemented so that customers can manage their purchase history and track their orders."
+      ],
+      "features": [
+        "Shopify E-commerce",
+        "Modern and responsive design",
+        "SEO Optimization",
+        "Multiple payment methods",
+        "Subscription system for discounts",
+        "Order and user management",
+        "Customer login system",
+        "Nationwide shipping"
+      ],
+      "imageGallery": [
+        "/projects/puraimpresion/puraimpresion1.webp",
+        "/projects/puraimpresion/puraimpresion2.webp",
+        "/projects/puraimpresion/puraimpresion3.webp",
+        "/projects/puraimpresion/puraimpresion4.webp",
+        "/projects/puraimpresion/puraimpresion5.webp",
+        "/projects/puraimpresion/puraimpresion6.webp"
+      ],
+      "slug": "pura-impresion-ecommerce",
+      "size": "medium"
+    },
+    {
+      "id": 8,
+      "title": "Collaborative Consulting, Transformative Results",
+      "companyName": "Kalosys",
+      "description": "A modern and optimized landing page for Kalosys, a U.S.-based IT consulting firm offering integration, data management, and cloud solutions.",
+      "categories": ["LANDING", "UI_UX"],
+      "imageUrl": "/projects/kalosys/kalosys1.webp",
+      "url": "https://kalosys.net/",
+      "releaseDate": "MARCH, 2024",
+      "about": [
+        "Kalosys is an IT consulting firm that helps businesses optimize their technological infrastructure, improve data management, and efficiently adopt cloud solutions.",
+        "Its innovative approach enables organizations to maximize their technology investments, ensuring smooth and secure operations.",
+        "With a team of technology experts, Kalosys positions itself as a strategic partner for companies looking to modernize their systems, enhance security, and improve operational resilience.",
+        "Kalosys not only implements solutions but also provides continuous support to ensure long-term success for its clients."
+      ],
+      "solution": [
+        "A modern and professional landing page was developed to reflect Kalosys’ brand identity, using a sophisticated and corporate color palette to convey seriousness and trust.",
+        "The site includes multiple informative pages detailing Kalosys’ services, team, work methodology, and success stories.",
+        "A content management system was implemented using Sanity, allowing the company to update content easily and efficiently.",
+        "SEO optimization was a key focus, ensuring Kalosys has a strong presence in search engines.",
+        "An integrated blog section was included to share relevant content on technology, innovation, and IT best practices.",
+        "Responsive and accessible design, ensuring a seamless experience across mobile devices, tablets, and desktops."
+      ],
+      "features": [
+        "Modern and Professional Design",
+        "SEO Optimization",
+        "Integration with Sanity CMS",
+        "Multi-Page Structure",
+        "Responsive and Adaptive Design",
+        "Comprehensive IT Services Information",
+        "Blog Section for Thought Leadership"
+      ],
+      "imageGallery": [
+        "/projects/kalosys/kalosys1.webp",
+        "/projects/kalosys/kalosys2.webp",
+        "/projects/kalosys/kalosys3.webp",
+        "/projects/kalosys/kalosys4.webp",
+        "/projects/kalosys/kalosys5.webp",
+        "/projects/kalosys/kalosys6.webp"
+      ],
+      "slug": "kalosys-landing-page",
+      "size": "medium"
+    }
+  ]
+}

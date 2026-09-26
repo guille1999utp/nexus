@@ -1,0 +1,266 @@
+{
+    "Hero": {
+        "title": "No desarrollamos páginas,",
+        "title2": "creamos experiencias únicas",
+        "description": "Somos arquitectos digitales que combinan desarrollo, diseño obsesivo y estrategias personalizadas para convertir tu sitio web en ventas, leads o revoluciones digitales.",
+        "button": "CONVERSEMOS!",
+        "eyebrow": "Nexus Labs · Más allá de las ideas",
+        "secondaryButton": "VER PROYECTOS",
+        "scroll": "Desliza",
+        "stats": [
+            { "value": "+50", "label": "Clientes satisfechos" },
+            { "value": "+10", "label": "Años de experiencia" },
+            { "value": "24h", "label": "Tiempo de respuesta" }
+        ]
+    },
+    "WhatWeDo": {
+        "title": "Hacemos las cosas",
+        "title2": "diferentes",
+        "button": "COMIENZA TU PROYECTO!",
+        "services": [
+        {
+        "number": "01",
+        "title": "Nuestra Trayectoria",
+        "points": [
+            "Más de 50 clientes satisfechos",
+            "Casos de éxito en diversas industrias",
+            "Atención personalizada y adaptada a cada negocio",
+            "+10 años entregando proyectos de calidad",
+            "Compromiso con la innovación y las tendencias tecnológicas"
+        ]
+        },
+        {
+        "number": "02",
+        "title": "Desarrollo Web & E-commerce",
+        "points": [
+            "Diseño y desarrollo de sitios web personalizados",
+            "Tiendas en línea optimizadas para conversión",
+            "Integración con pasarelas de pago y logística",
+            "SEO y optimización para máxima velocidad",
+            "Mantenimiento y actualizaciones constantes"
+        ]
+        },
+        {
+        "number": "03",
+        "title": "Software a la Medida",
+        "points": [
+            "Soluciones diseñadas según tus necesidades",
+            "Automatización de procesos para empresas",
+            "Integraciones con sistemas existentes",
+            "Seguridad y escalabilidad garantizadas",
+            "Soporte y evolución continua"
+        ]
+        },
+        {
+        "number": "04",
+        "title": "Diseño UI/UX y Experiencia Digital",
+        "points": [
+            "Interfaces intuitivas y atractivas",
+            "Investigación y análisis de usuario",
+            "Prototipado y wireframing avanzado",
+            "Diseño responsive para todos los dispositivos",
+            "Accesibilidad y usabilidad óptima"
+        ]
+        },
+        {
+        "number": "05",
+        "title": "Soluciones con Inteligencia Artificial",
+        "points": [
+            "Automatización de procesos empresariales",
+            "Desarrollo de chatbots y asistentes virtuales",
+            "Optimización de contenido con IA",
+            "Personalización avanzada en plataformas digitales"
+        ]
+        }
+    ]
+    },
+    "Services": {
+        "title": "En qué te",
+        "title2": "podemos ayudar?",
+        "buttonText": "¡Quiero registrarme!",
+        "sections": [
+          {
+            "title": "Landing Pages",
+            "description": "Diseño estratégico y atractivo + copy persuasivo = visitantes convertidos en clientes",
+            "image": "/services/landing.webp"
+          },
+          {
+            "title": "Software a la medida",
+            "description": "Plataformas o sistemas custom: tecnología que se adapta a ti, no al revés",
+            "image": "/services/software.webp"
+          },
+          {
+            "title": "E-Commerce",
+            "description": "Tiendas online que venden, rápidas, seguras y listas para escalar: convierte scrolls en ventas",
+            "image": "/services/ecommerce.webp"
+          },
+          {
+            "title": "Diseño UI/UX",
+            "description": "Interfaces intuitivas + experiencia fluida = usuarios felices y fieles",
+            "image": "/services/ui_design.webp"
+          }
+        ]
+    },
+    "Projects": {
+        "LinkText": "Ver todos los proyectos",
+        "title": "Proyectos",
+        "button": "Ver más",
+        "projects": [
+            {
+                "title": "CONTAAPP",
+                "description": "Gestión eficiente de inventarios.",
+                "image": "/services/software.webp"
+            },
+            {
+                "title": "GROUPIA",
+                "description": "Plataforma para comunidad online",
+                "image": "/projects/groupia/groupia1.webp"
+            },
+            {
+                "title": "MOBIEN",
+                "description": "Apoyando el bienestar de las personas",
+                "image": "/projects/mobien/mobien1.webp"
+            },
+            {
+                "title": "PURA IMPRESIÓN",
+                "description": "Tienda ecommerce desarrollada en shopify",
+                "image": "/projects/puraimpresion/puraimpresion1.webp"
+            },
+            {
+                "title": "FITPUP",
+                "description": "Servicios de cuidados para mascotas",
+                "image": "/projects/fitpup/fitpup_banner.webp"
+            }
+        ]
+    },
+    "Phrase": "\"En Nexus Labs creamos webs que no solo hacen que tu marca sea única, sino que también generan resultados reales\"",
+    "Stack": {
+        "title": "Nuestro stack",
+        "title2": "tecnológico",
+        "description": "Trabajamos con tecnologías y herramientas de vanguardia para ofrecer soluciones robustas, seguras y escalables. Desde plataformas en la nube hasta desarrollo a medida y tiendas e-commerce, creamos experiencias digitales optimizadas para tu éxito."
+    },
+    "Steps": {
+        "title": "Nuestro",
+        "title2": "Proceso",
+        "description": " Nuestro proceso está diseñado para garantizar la máxima calidad y eficiencia en cada etapa. Desde la planificación inicial hasta la entrega final, nos aseguramos de que cada detalle sea cuidadosamente considerado y ejecutado.",
+        "buttonText": "Comienza Hoy",
+        "steps": [
+            {
+                "title": "Contacto",
+                "description": "Nos envías un resumen detallado del proyecto.",
+                "image": "/steps/process-1.webp"
+            },
+            {
+                "title": "Presupuesto",
+                "description": "Analizamos el proyecto a fondo y te envíamos la cotización para llevar acabo el trabajo",
+                "image": "/steps/process-2.webp"
+            },
+            {
+                "title": "Aprobado",
+                "description": "Una vez aceptas el presupuesto, te pedimos toda la información necesaria para poder empezar a trabajar.",
+                "image": "/steps/process-3.webp"
+            },
+            {
+                "title": "Feedback",
+                "description": "A medida que vamos avanzando, iremos enviándote actualizaciónes para recibir feedback.",
+                "image": "/steps/process-4.webp"
+            },
+            {
+                "title": "Lanzamiento",
+                "description": "Te entregamos el proyecto sin contratiempos y con un resultado que superará tus espectativas.",
+                "image": "/steps/process-5.webp"
+            }
+        ]
+    },
+    "Faqs": {
+        "title": "Todavía tienes",
+        "title2": "preguntas?",
+        "description": "Aquí tienes algunas respuestas a las preguntas más frecuentes. Si no encuentras lo que buscas, no dudes en contactarnos.",
+        "buttonText": "CONTÁCTANOS!",
+        "faqs": [
+            {
+                "question": "¿Por qué es importante el diseño web para mi negocio?",
+                "answer": "Un diseño web profesional es tu mejor vendedor 24/7. Mejora la primera impresión, aumenta la credibilidad, facilita que te encuentren en Google y convierte visitantes en clientes. Un sitio bien diseñado puede incrementar hasta un 80% la percepción de calidad de tu marca según estudios de Stanford."
+            },
+            {
+                "question": "¿Cuánto tiempo lleva diseñar un sitio web?",
+                "answer": "Creamos sitios web a medida en 1-3 semanas, dependiendo de la complejidad. Trabajamos en fases ágiles: planificación estratégica (1 semana), diseño personalizado (1-2 semanas), desarrollo técnico (1-3 semanas). ¡Tu proyecto tendrá avances visibles desde la primera semana!"
+            },
+            {
+                "question": "¿Qué información debo proporcionar para comenzar a construir mi sitio web?",
+                "answer": "Necesitamos 3 elementos clave: 1) Información de tu negocio (misión, valores, público objetivo) 2) Material branding (logo, colores, fuentes) 3) Contenido básico (fotos, textos descriptivos)."
+            },
+            {
+                "question": "¿Brindan soporte continuo después del lanzamiento?",
+                "answer": "Sí, ofrecemos soporte y planes de mantenimiento post-lanzamiento para garantizar que tu sitio web esté siempre actualizado y funcione de manera óptima."
+            },
+            {
+                "question": "¿Qué servicios ofrecen?",
+                "answer": "Ofrecemos soluciones digitales a medida, incluyendo diseño y desarrollo de landing pages, páginas web y software personalizado. También creamos interfaces intuitivas con diseño UI/UX, desarrollamos CRMs a la medida, integramos inteligencia artificial en tus procesos, y optimizamos tiendas eCommerce con Shopify. Además, implementamos automatizaciones y flujos de trabajo con diversas herramientas e IA para mejorar la eficiencia de tu negocio. ¡Llevamos tu proyecto al siguiente nivel! 🚀"
+            },
+            {
+                "question": "¿Qué pasa si no me gusta el diseño que se entrega?",
+                "answer": "Durante el transcurso del proyecto estamos constantemente en contacto y recibiendo feedback por tu parte. De esta forma, conseguimos que el resultado final sea el esperado. Una vez se entrega la página web tendrás una revisión disponible por si necesitas alguna pequeña modificación."
+            },
+            {
+                "question": "¿Pueden ayudarme con SEO?",
+                "answer": "Aunque nuestro enfoque principal está en el diseño y desarrollo, siempre intentamos optimizar el SEO básico de tu sitio y brindarte orientación para mejorar su visibilidad."
+            }
+        ]
+    },
+    "Footer": {
+        "title": "Contenido entregado a tu bandeja de entrada",
+        "label": "Ingresa tu correo",
+        "subscribeButton": "Suscribirse",
+        "privacyPolicy": "Política de Privacidad",
+        "termsOfService": "Términos de Servicio",
+        "contact" : "CONTÁCTANOS",
+        "solution" : "SOLUCIONES",
+        "anymoment" : "EN CUALQUIER MOMENTO",
+        "solutions" : [
+            "Páginas Web",
+            "E-commerce",
+            "Optimizacion SEO",
+            "Diseño UI/UX",
+            "Software a la medida",
+            "Integraciones y Automatizaciones"
+        ],
+        "logoTextComplete": "Nexus Labs",
+        "logoText1": "Nexus",
+        "logoText2": "Labs",
+        "rights": "Todos los derechos reservados",
+        "by": "Por NEXUS LABS",
+        "tagline": "Más allá de las ideas",
+        "ctaTitle": "¿Listo para ir más allá?",
+        "ctaDescription": "Cuéntanos tu idea y la convertimos en un producto digital que funciona.",
+        "ctaButton": "HABLEMOS",
+        "navigation": "NAVEGACIÓN",
+        "social": "SÍGUENOS"
+    },
+    "Sections": {
+        "expertise": "Por qué Nexus",
+        "services": "Servicios",
+        "projects": "Proyectos",
+        "stack": "Tecnología",
+        "process": "Proceso",
+        "faq": "Preguntas frecuentes"
+    },
+    "Menu": {
+        "options": [
+          {
+            "name": "Inicio",
+            "link": "/"
+          },
+          {
+            "name": "Proyectos",
+            "link": "/projects"
+          },
+          {
+            "name": "Contacto",
+            "link": "/contact"
+          }
+        ],
+        "close": "CERRAR",
+        "open": "Menú"
+      }
+}

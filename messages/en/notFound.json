@@ -1,0 +1,7 @@
+{
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "Sorry, We can't find that page. You'll find lots to explore on the home page.",
+        "buttonText": "Back Home"
+    }
+}

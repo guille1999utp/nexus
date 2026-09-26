@@ -1,0 +1,7 @@
+{
+    "notFound": {
+        "title": "Página No Encontrada",
+        "description": "Lo sentimos, no podemos encontrar esa página. Encontrarás mucho para explorar en la página de inicio.",
+        "buttonText": "Volver a Inicio"
+    }
+}
