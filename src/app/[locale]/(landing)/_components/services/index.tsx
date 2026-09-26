@@ -10,6 +10,7 @@ import { useMediaQuery } from "react-responsive";
 import useIsIphoneOrSafari from "@/hooks/useIsIphoneOrSafari";
 import { useTranslations } from "next-intl";
 import { Service } from "@/types";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 interface AnimatedSectionProps {
   title: string;
@@ -122,6 +123,7 @@ export default function ServicesSection() {
 
   return (
     <div className="relative w-full overflow-hidden bg-background pt-24 sm:pt-28 lg:max-w-none">
+      <GalaxyBackground variant="section" />
       <div
         aria-hidden="true"
         className="absolute -right-40 top-10 size-[520px] rounded-full bg-brand-violet/15 blur-[150px]"

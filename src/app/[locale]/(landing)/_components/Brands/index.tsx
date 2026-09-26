@@ -8,6 +8,7 @@ import Marquee from "@/components/ui/marquee";
 import AnimationContainer from "@/components/global/animation-container";
 import SectionLabel from "@/components/global/SectionLabel";
 import { useTranslations } from "next-intl";
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 export default function Brands() {
 const container = useRef<HTMLDivElement>(null);
@@ -79,6 +80,7 @@ const listLogos = Array.from({ length: 24 }, (_, index) => {
         ref={container}
         className={`relative mt-10 md:mt-20 ${isOutside ? "overflow-hidden" : ""}`}
       >
+        <GalaxyBackground variant="section" />
         <div
           aria-hidden="true"
           className="absolute left-0 top-0 size-[480px] rounded-full bg-brand-indigo/15 blur-[140px]"

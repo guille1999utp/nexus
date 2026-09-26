@@ -12,6 +12,7 @@ import { Project } from '@/types'
 import AnimationContainer from '@/components/global/animation-container'
 import AnimatedH1 from '@/components/global/AnimatedH1/AnimatedH1'
 import SectionLabel from '@/components/global/SectionLabel'
+import GalaxyBackground from "@/components/global/GalaxyBackground";
 
 function Steps() {
   const stickySectionRef = useRef<HTMLDivElement>(null)
@@ -186,6 +187,7 @@ function Steps() {
 
   return (
     <div className="container overflow-hidden">
+      <GalaxyBackground variant="section" />
       <section className="steps" ref={stickySectionRef}>
         <div
           className="absolute z-[2] flex flex-col m-[4em_2em_2em_0] md:m-[5em_2em_2em_1em] will-change-transform"
