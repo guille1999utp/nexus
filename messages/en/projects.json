@@ -5,7 +5,12 @@
       "title": "Colombia’s First Legal Subscription Platform",
       "companyName": "Legal Aid",
       "description": "A SaaS platform providing 24/7 AI-powered legal assistance, monthly subscription plans, and smart scheduling for specialized legal consultations.",
-      "categories": ["AI_INTEGRATION", "LANDING", "CRM", "UI_UX"],
+      "categories": [
+        "AI_INTEGRATION",
+        "LANDING",
+        "CRM",
+        "UI_UX"
+      ],
       "imageUrl": "/projects/legalaid/legalaid_banner.webp",
       "url": "https://www.legalaidcol.com",
       "releaseDate": "MARCH, 2025",
@@ -47,13 +52,15 @@
       "slug": "legal-aid-prepagada-juridica",
       "size": "large"
     },
-
     {
       "id": 1,
       "title": "Personalized Pet Care Services",
       "companyName": "FITPup",
       "description": "A visually engaging and user-friendly landing page for FITPup, a premium pet care service provider.",
-      "categories": ["LANDING", "UI_UX"],
+      "categories": [
+        "LANDING",
+        "UI_UX"
+      ],
       "imageUrl": "/projects/fitpup/fitpup_banner.webp",
       "url": "https://www.fitpuppb.com/",
       "releaseDate": "OCTOBER, 2024",
@@ -98,7 +105,10 @@
       "title": "Comprehensive Wellness Platform",
       "companyName": "Mobien",
       "description": "A modern and attractive landing page for Mobien, a comprehensive wellness platform that combines education, finance, and health.",
-      "categories": ["LANDING", "UI_UX"],
+      "categories": [
+        "LANDING",
+        "UI_UX"
+      ],
       "imageUrl": "/projects/mobien/mobien1.webp",
       "url": "https://mobien.vercel.app/",
       "releaseDate": "AUGUST, 2024",
@@ -143,7 +153,12 @@
       "title": "Bringing Communities Together",
       "companyName": "GroupIA",
       "description": "A modern and attractive landing page for a platform that enables the creation of communities and courses, enhanced with artificial intelligence.",
-      "categories": ["LANDING", "UI_UX", "CRM", "AI_INTEGRATION"],
+      "categories": [
+        "LANDING",
+        "UI_UX",
+        "CRM",
+        "AI_INTEGRATION"
+      ],
       "imageUrl": "/projects/groupia/groupia1.webp",
       "url": "https://group-ia.vercel.app/",
       "releaseDate": "JANUARY, 2025",
@@ -191,7 +206,11 @@
       "title": "Intelligent Assessment Platform",
       "companyName": "Coingenia",
       "description": "Application for the creation and management of academic tests with personalized learning path generation.",
-      "categories": ["CRM", "AI_INTEGRATION", "UI_UX"],
+      "categories": [
+        "CRM",
+        "AI_INTEGRATION",
+        "UI_UX"
+      ],
       "imageUrl": "/projects/coingenia/coingenia_banner.webp",
       "url": "",
       "releaseDate": "DECEMBER, 2024",
@@ -229,7 +248,9 @@
       "title": "Intelligent Route and Vehicle Management",
       "companyName": "Localizamos",
       "description": "Platform for managing routes, vehicles, and drivers with automated assignments and detailed reports.",
-      "categories": ["CRM"],
+      "categories": [
+        "CRM"
+      ],
       "imageUrl": "/projects/localizamos/loc_banner.webp",
       "url": "",
       "releaseDate": "DECEMBER, 2024",
@@ -267,7 +288,10 @@
       "title": "AI Chatbot Integration",
       "companyName": "24xseven",
       "description": "AI-powered chatbot for customer support.",
-      "categories": ["AI_INTEGRATION", "LANDING"],
+      "categories": [
+        "AI_INTEGRATION",
+        "LANDING"
+      ],
       "imageUrl": "/projects/seven/7_banner.webp",
       "url": "https://www.24xseven.com",
       "releaseDate": "FEBRUARY, 2015",
@@ -302,7 +326,10 @@
       "title": "E-commerce Store Focused on Printing, Design, and Creation",
       "companyName": "Pura Impresión",
       "description": "An e-commerce store developed in Shopify, specializing in personalized printing on a wide variety of products.",
-      "categories": ["ECOMMERCE", "UI_UX"],
+      "categories": [
+        "ECOMMERCE",
+        "UI_UX"
+      ],
       "imageUrl": "/projects/puraimpresion/puraimpresion1.webp",
       "url": "https://puraimpresion.com/",
       "releaseDate": "FEBRUARY, 2024",
@@ -348,7 +375,10 @@
       "title": "Collaborative Consulting, Transformative Results",
       "companyName": "Kalosys",
       "description": "A modern and optimized landing page for Kalosys, a U.S.-based IT consulting firm offering integration, data management, and cloud solutions.",
-      "categories": ["LANDING", "UI_UX"],
+      "categories": [
+        "LANDING",
+        "UI_UX"
+      ],
       "imageUrl": "/projects/kalosys/kalosys1.webp",
       "url": "https://kalosys.net/",
       "releaseDate": "MARCH, 2024",
@@ -385,6 +415,270 @@
       ],
       "slug": "kalosys-landing-page",
       "size": "medium"
+    },
+    {
+      "id": 10,
+      "title": "Connecting Communities, Empowering Local",
+      "companyName": "KOMU",
+      "description": "Hyperlocal community platform that connects neighbors, local businesses, and professionals within the same neighborhood or city in Colombia. It blends a community feed and location-based discovery with a loyalty system for businesses: digital coupons and stamp cards.",
+      "categories": [
+        "LANDING",
+        "UI_UX",
+        "CRM"
+      ],
+      "imageUrl": "/projects/komu/komu_banner.webp",
+      "url": "https://www.komuapp.co",
+      "releaseDate": "FEBRUARY, 2026",
+      "about": [
+        "KOMU is the hyperlocal community platform that connects neighbors, local businesses, and professionals from the same neighborhood or city in one place.",
+        "Inspired by the idea of a “Nextdoor for Colombia and Latin America,” KOMU is redesigned and adapted to the region’s reality: in Spanish, with local geography and a focus on neighborhood commerce.",
+        "Beyond a neighborhood social network, it integrates real business tools from day one —catalog, metrics, members, and plans— along with its own loyalty system based on digital coupons and stamp cards.",
+        "It operates in Colombia with a vision to expand across Latin America, under the tagline “Connecting communities, empowering local.”"
+      ],
+      "solution": [
+        "We designed and developed the KOMU experience as a hyperlocal community platform, centered on proximity-based discovery and local commerce.",
+        "We built a clear architecture by sections and roles: a community feed, a map and location-based search (near me, my city, explore), and profiles for neighbors, businesses, and professionals.",
+        "We defined the business module with profile, product and service catalog, visibility metrics (visits and WhatsApp clicks), team members, and plans.",
+        "We designed the “Benefits” loyalty system: redeemable coupons and a configurable digital stamp card (between 3 and 12 stamps) with a customizable reward for each business.",
+        "We developed personal and business onboarding, with geolocation by Colombian departments and cities, and avatars.",
+        "We crafted a cohesive visual identity and a Spanish (es-CO) interface focused on closeness, trust, and community.",
+        "The structure was prepared to scale to new cities and support regional expansion across Latin America."
+      ],
+      "features": [
+        "Community Feed with Category and Location Filters",
+        "Proximity-Based Discovery with Map",
+        "Profiles for Neighbors, Businesses, and Professionals",
+        "Product and Service Catalog",
+        "Visibility Metrics (Visits and WhatsApp Clicks)",
+        "Redeemable Digital Coupons",
+        "Configurable Stamp Card (3 to 12 Stamps)",
+        "Onboarding and City-Based Geolocation",
+        "Business Plans (including Pro Plan)",
+        "Spanish Interface (es-CO)"
+      ],
+      "imageGallery": [
+        "/projects/komu/komu1.webp",
+        "/projects/komu/komu2.webp",
+        "/projects/komu/komu3.webp",
+        "/projects/komu/komu4.webp",
+        "/projects/komu/komu5.webp",
+        "/projects/komu/komu6.webp",
+        "/projects/komu/komu7.webp",
+        "/projects/komu/komu8.webp",
+        "/projects/komu/komu9.webp",
+        "/projects/komu/komu10.webp",
+        "/projects/komu/komu11.webp"
+      ],
+      "slug": "komu-comunidad-hiperlocal",
+      "size": "large"
+    },
+    {
+      "id": 11,
+      "title": "Your Business Already Works. Your Marketing Doesn’t.",
+      "companyName": "Nodo",
+      "description": "Website for Nodo, a digital marketing agency in Bogotá and Villavicencio. A conversion-focused Next.js landing page with the portfolio managed in Sanity, a contact form that lands in the inbox through Resend and opens WhatsApp with the message pre-written, and an SEO, AEO and GEO layer so AI assistants cite it too.",
+      "categories": [
+        "LANDING",
+        "UI_UX"
+      ],
+      "imageUrl": "/projects/nodo/nodo_banner.webp",
+      "url": "https://www.somosnodo.com.co",
+      "releaseDate": "AUGUST, 2026",
+      "about": [
+        "Nodo is a full-service digital marketing agency based in Bogotá, with operations in Villavicencio and the Meta region as well. Its tagline: “We connect ideas with results.”",
+        "It works with businesses that already make money but have no marketing team: clinics, restaurants, real estate firms, gyms, medical practices and construction companies. Hence the line that opens the site: “Your business already works. Your marketing doesn’t.”",
+        "The promise is to handle all of it. They go to the client’s location, shoot with their own crew, edit, publish and run the paid media on Meta, TikTok, Google and LinkedIn. The client writes no scripts, edits nothing and publishes nothing.",
+        "Every month they deliver a one-page report with three numbers —how many people saw you, how many wrote to you and what each of those people cost— with no jargon and no thirty-page attachments.",
+        "Nodo is two people: Natalia Melo Sánchez, who runs content and community, and Juan Pablo Pineda, who runs production and paid media. That is precisely their pitch: the client talks to whoever does the work, not to an account executive."
+      ],
+      "solution": [
+        "We designed and built the entire site in Next.js with the App Router, React and TypeScript: the long conversion home page plus the about, projects, project detail, contact, thank-you and privacy pages.",
+        "We shaped the home page as a sales journey rather than a service catalogue: the problem (“None of this is your fault”), the team the business is missing, the three-step process —we talk, we shoot, we measure—, the real cases, the differentiator, the plans with prices in plain sight, and the questions people ask before signing.",
+        "We set up Sanity as the content management system. Projects, images, copy and every case’s data are edited from the Studio without touching code, and a webhook revalidates the Next.js cache so changes go live immediately.",
+        "We created the projects section with a dedicated page per client: a fact sheet with account, industry, city, year and website, the story of what had to be solved, and the gallery of footage shot on location.",
+        "We developed the five-field contact form with a double outcome: the submission reaches Nodo’s inbox through Resend and, at the same time, opens WhatsApp with the message already written so the prospect only has to hit send.",
+        "We hardened that form with a honeypot field and validation against spam, and added the data-processing consent checkbox required by Colombia’s Law 1581 of 2012, with its privacy page and a thank-you page kept out of search engines.",
+        "We covered technical SEO end to end: per-page metadata, canonicals, es-CO hreflang, code-generated sitemap and robots.txt, images served in modern formats through the Next image optimizer, custom Open Graph, manifest and icons.",
+        "We implemented AEO and GEO, where visibility is actually decided today: Organization, ProfessionalService and LocalBusiness structured data with address, opening hours, team and a plan catalogue with prices, plus a FAQPage block covering the ten frequently asked questions.",
+        "We also published an llms.txt file with all of the agency’s information in plain text —what it does, where, plans, prices, team, clients and terms— and opened robots.txt to GPTBot, ClaudeBot, PerplexityBot, Google-Extended and the rest, so ChatGPT, Claude, Perplexity and Gemini can quote Nodo with correct data instead of making it up.",
+        "We defined the on-screen identity: Nodo purple, accent yellow and a cream background, uppercase headlines in a heavy sans, serif body copy, scroll-triggered animations and a full-screen menu with a QR code to WhatsApp.",
+        "We tuned the mobile version screen by screen, because almost all of the agency’s traffic arrives from Instagram and TikTok: the floating WhatsApp button and the free-consultation call to action are always within a thumb’s reach."
+      ],
+      "features": [
+        "Next.js with App Router, React and TypeScript",
+        "Content and Projects Editable from Sanity CMS",
+        "Webhook-Driven Cache Revalidation",
+        "Contact Form Delivered by Email with Resend",
+        "Submission That Opens WhatsApp with the Message Ready",
+        "Dedicated Detail Page per Project",
+        "Plans and Prices with Structured Data",
+        "LocalBusiness and FAQPage Structured Data",
+        "llms.txt File for AI Assistants (AEO and GEO)",
+        "Code-Generated Sitemap, Robots and Open Graph",
+        "Responsive Design and Full-Screen Menu",
+        "Colombian Data Protection Law 1581 of 2012 Compliance"
+      ],
+      "imageGallery": [
+        "/projects/nodo/nodo1.webp",
+        "/projects/nodo/nodo2.webp",
+        "/projects/nodo/nodo3.webp",
+        "/projects/nodo/nodo4.webp",
+        "/projects/nodo/nodo5.webp",
+        "/projects/nodo/nodo6.webp",
+        "/projects/nodo/nodo7.webp",
+        "/projects/nodo/nodo8.webp"
+      ],
+      "slug": "nodo-agencia-marketing-digital",
+      "size": "medium"
+    },
+    {
+      "id": 12,
+      "title": "AI-Powered Hospitality Platform",
+      "companyName": "Contler",
+      "description": "High-impact corporate website for a global artificial intelligence platform focused on hospitality, featuring voice agents, AI concierge services, and reservation automation.",
+      "categories": [
+        "LANDING",
+        "UI_UX",
+        "AI_INTEGRATION",
+        "CRM"
+      ],
+      "imageUrl": "/projects/contler/contler_banner.webp",
+      "url": "https://www.contler.com",
+      "releaseDate": "DECEMBER, 2025",
+      "about": [
+        "Contler is a technology platform designed to transform the hospitality industry through artificial intelligence applied to reservations, guest services, and hotel operations.",
+        "The solution combines AI voice agents, intelligent concierge services, and omnichannel automation to deliver 24/7 assistance without losing the human touch.",
+        "The website was designed to reflect a premium, global, and enterprise-grade brand aligned with five-star hotels and international hospitality groups.",
+        "The platform clearly communicates its value proposition, its differentiation from traditional call centers, and the trust of over 100 leading hotels worldwide."
+      ],
+      "solution": [
+        "We designed and developed a high-impact corporate landing page focused on conversion and brand positioning.",
+        "A clear section-based architecture was built, including a main hero section, AI solutions, live demos, comparisons with traditional call centers, key features, social proof, and brand philosophy.",
+        "A demo scheduling form was implemented and directly connected to Google Sheets using a Google Service Account, enabling automatic and structured lead capture for the sales team.",
+        "The website was developed with a fully responsive approach, ensuring a seamless experience across desktop, tablet, and mobile devices.",
+        "Support for both Light Mode and Dark Mode was implemented, adapting the visual experience to user preferences and reinforcing the platform’s technological identity.",
+        "Smooth animations, elegant transitions, and micro-interactions were added to elevate the premium perception of the product.",
+        "Performance and loading times were optimized through image optimization, lazy loading strategies, and technical SEO best practices.",
+        "The content structure was prepared to support future scalability, international expansion, and product growth."
+      ],
+      "features": [
+        "High-Impact Corporate Landing Page",
+        "Demo Form Integrated with Google Sheets",
+        "Fully Responsive Design (Desktop, Tablet, and Mobile)",
+        "Light Mode / Dark Mode Support",
+        "Premium Animations and Micro-Interactions",
+        "Performance and SEO Optimization",
+        "Comparison Sections and Social Proof",
+        "Scalable Architecture for Global Growth",
+        "B2B Conversion-Focused UX/UI"
+      ],
+      "imageGallery": [
+        "/projects/contler/contler1.webp",
+        "/projects/contler/contler2.webp",
+        "/projects/contler/contler3.webp",
+        "/projects/contler/contler4.webp",
+        "/projects/contler/contler5.webp",
+        "/projects/contler/contler6.webp",
+        "/projects/contler/contler7.webp"
+      ],
+      "slug": "contler-ia-hoteleria",
+      "size": "medium"
+    },
+    {
+      "id": 13,
+      "title": "Dog Daycare & Boarding in Palm Beach",
+      "companyName": "PetFriends",
+      "description": "High-impact website for a premium daycare and boarding service focused on small groups, trust, 24/7 supervision, and a “vacation-for-dogs” experience in Palm Beach.",
+      "categories": [
+        "LANDING",
+        "UI_UX"
+      ],
+      "imageUrl": "/projects/petfriends/petfriends_banner.webp",
+      "url": "https://www.petfriendspalmbeach.com",
+      "releaseDate": "FEBRUARY, 2026",
+      "about": [
+        "PetFriends is a dog daycare & boarding service in Palm Beach focused on small groups to ensure personalized, calm, and safe care.",
+        "The brand communicates a tropical, clean, and friendly vibe—where owners feel at ease and dogs feel like they’re on vacation.",
+        "Unlike high-volume facilities, PetFriends prioritizes constant supervision, affection, and a home-like environment—never a “kennel” experience.",
+        "The website needed to build trust at first glance, highlight key differentiators (small-group care, vaccine requirements, temperament evaluation, 24/7 supervision), and drive bookings through clear CTAs."
+      ],
+      "solution": [
+        "We designed and developed a modern, fully responsive landing page with a soft pastel aesthetic (signature pink) and a clean layout to elevate a premium brand feel.",
+        "We built a high-impact hero section with a strong visual centerpiece and conversion-focused CTAs (“Book a Stay” / “Contact Us”), optimized for fast and intuitive navigation.",
+        "We implemented dedicated service sections (Daycare / Boarding) emphasizing safety, supervision, and a home-like experience aligned with the message “Where pets feel at home.”",
+        "We created a visual gallery with custom-shaped cards and a dynamic layout, reinforcing a friendly and aspirational look & feel.",
+        "We added an accordion-style FAQ module to address key objections (required vaccines, supervision, grouping by size/temperament, emergencies, cancellations).",
+        "We developed a booking flow with a multi-step form to collect owner details, pet information, behavior/socialization, requested services, and dates in an organized way.",
+        "We optimized performance and technical SEO (efficient loading, optimized images, clean section structure, and simple navigation) to ensure speed and a great mobile experience."
+      ],
+      "features": [
+        "Conversion-focused premium landing page",
+        "Pastel, clean, tropical UI/UX design",
+        "Clear CTAs (Book a Stay / Contact Us)",
+        "Visual gallery with custom-shaped cards",
+        "Accordion-style FAQs (key objections covered)",
+        "Multi-step booking form (Owner, Pets, Schedule)",
+        "Complete data capture: vaccines, vet info, behavior, and services",
+        "Fully responsive experience (desktop / tablet / mobile)",
+        "Performance optimization and technical SEO"
+      ],
+      "imageGallery": [
+        "/projects/petfriends/petfriends1.webp",
+        "/projects/petfriends/petfriends2.webp",
+        "/projects/petfriends/petfriends3.webp",
+        "/projects/petfriends/petfriends4.webp",
+        "/projects/petfriends/petfriends5.webp",
+        "/projects/petfriends/petfriends6.webp"
+      ],
+      "slug": "petfriends-daycare-boarding-palm-beach",
+      "size": "small"
+    },
+    {
+      "id": 14,
+      "title": "Good Samaritan Home Foundation",
+      "companyName": "Good Samaritan Home Foundation",
+      "description": "A heartfelt, responsive landing page for a non-profit organization with over 60 years of mission serving the elderly, the sick, and people in vulnerable conditions.",
+      "categories": [
+        "LANDING",
+        "UI_UX"
+      ],
+      "imageUrl": "/projects/buensamaritano/buensamaritano_banner.webp",
+      "url": "https://hogarbuensamaritano.vercel.app",
+      "releaseDate": "OCTOBER, 2025",
+      "about": [
+        "The Good Samaritan Home Foundation, located in Cartago, Valle del Cauca (Colombia), has offered a dignified home, comprehensive care, and spiritual support to elderly people, the sick, and those in vulnerable or abandoned conditions for decades.",
+        "Its story began in 1964 with the arrival of the missionary team from the Diocese of Manchester (New Hampshire, USA) and the tireless service of nurse Claire Aimée Ange Aucoin — affectionately known as Clarita. In 1998, her lifelong mission became a legally recognized foundation sustained by faith, international solidarity, and the generosity of the local community.",
+        "The landing page was designed to convey the home’s legacy of compassion, its current impact — more than 170 people cared for daily — and the importance of ongoing support through donations, volunteering, and partnerships.",
+        "With a warm and human-centered design, the site honors the story of the Home and makes it easier for visitors to connect emotionally and contribute to the cause."
+      ],
+      "solution": [
+        "We designed a narrative-driven landing page showcasing the Home’s history, Clarita’s mission, and its spiritual foundation through an elegant and visual timeline.",
+        "The structure includes multiple sections: a Hero area with Clarita’s quote and donation CTA, full history, mission and vision, daily activities, impact metrics, ways to help, and direct contact channels.",
+        "The design is fully responsive and optimized for mobile, tablet, and desktop, ensuring accessibility for donors and visitors worldwide.",
+        "We strategically highlighted key donation information — bank account details, tax ID (NIT), WhatsApp contact, email, and physical location — to make supporting the mission simple and transparent.",
+        "The visual identity uses a soft, faith-inspired color palette that conveys warmth, trust, and sincerity, aligned with the foundation’s humanitarian and spiritual essence.",
+        "We structured all content to support future bilingual expansion (Spanish/English), enabling broader communication with international partners and donors."
+      ],
+      "features": [
+        "Hero section with inspirational quote and donation CTA",
+        "Historical timeline highlighting 60+ years of service",
+        "Clear presentation of mission, vision, and values",
+        "Impact section with real-time beneficiary statistics",
+        "‘How to Help’ section with donation and volunteer options",
+        "Direct WhatsApp contact button for instant communication",
+        "Responsive design with intuitive navigation",
+        "Basic SEO optimization for greater reach",
+        "Faith-inspired and trust-centered visual identity",
+        "Multilingual support (English and Spanish) for international visitors"
+      ],
+      "imageGallery": [
+        "/projects/buensamaritano/buensamaritano1.webp",
+        "/projects/buensamaritano/buensamaritano2.webp",
+        "/projects/buensamaritano/buensamaritano3.webp",
+        "/projects/buensamaritano/buensamaritano4.webp"
+      ],
+      "slug": "hogar-buen-samaritano-landing-page",
+      "size": "small"
     }
   ]
 }
