@@ -1,5 +1,6 @@
-import { Locale, NextIntlClientProvider } from "next-intl";
+import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
+import { notFound } from "next/navigation";
 import { ReactNode, Suspense } from "react";
 import { clsx } from "clsx";
 import { Outfit, Unbounded } from "next/font/google";
@@ -13,7 +14,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 type Props = {
   children: ReactNode;
-  params: Promise<{ locale: Locale }>;
+  params: Promise<{ locale: string }>;
 };
 
 // Wide, rounded geometric display face: echoes the "NEXUS" wordmark.
@@ -42,13 +43,18 @@ export function generateStaticParams() {
 export async function generateMetadata({
   params,
 }: {
-  params: { locale: string };
+  params: Promise<{ locale: string }>;
 }): Promise<Metadata> {
-  const locale = params.locale;
+  const { locale } = await params;
+
+  // Metadata is generated before the layout body runs, so the locale has to be
+  // established here too, otherwise next-intl falls back to reading headers and
+  // the whole route opts out of static rendering.
+  setRequestLocale(locale);
 
   let messages;
   try {
-    messages = await getMessages();
+    messages = await getMessages({ locale });
   } catch (error) {
     console.error(`Failed to load messages for locale: ${locale}`, error);
     messages = {};
@@ -84,6 +90,10 @@ export async function generateMetadata({
 
 export default async function LocaleLayout({ children, params }: Props) {
   const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
 
   setRequestLocale(locale);
 
