@@ -54,10 +54,31 @@ const Proccess = () => {
     const cards = Array.from(
       stickyCardsRef.current?.querySelectorAll('.card') || []
     ) as HTMLElement[];
-    const rotations = [-12, 10, -5, 5, -5, -2];
+    // A phone has no room for the desktop tilt: on a 412px screen a 12deg
+    // rotation alone adds ~95px to the card's bounding width.
+    const narrow = () => window.innerWidth < 768;
+    const rotations = narrow()
+      ? [-5, 4, -3, 3, -2, -1]
+      : [-12, 10, -5, 5, -5, -2];
+    const maxRotation = Math.max(...rotations.map(Math.abs));
+
+    // How far a spent card may slide before its rotated corners leave the
+    // viewport. Derived from the card's real size rather than guessed.
+    const shiftLimit = () => {
+      const card = cards[0];
+      if (!card) return 0;
+      const rad = (maxRotation * Math.PI) / 180;
+      const boxWidth =
+        card.offsetWidth * Math.cos(rad) + card.offsetHeight * Math.sin(rad);
+      return Math.max(0, (window.innerWidth - boxWidth) / 2 - 8);
+    };
 
     cards.forEach((card, index) => {
       gsap.set(card, {
+        // Centring lives here, not in a Tailwind translate class: GSAP owns the
+        // whole `transform`, so a class-based translate is raced away.
+        xPercent: -50,
+        yPercent: -50,
         y: window.innerHeight,
         rotate: rotations[index],
       });
@@ -110,8 +131,12 @@ const Proccess = () => {
               
               if (remainingProgress > 0) {
                 const distanceMultiplier = 1 - index * 0.15;
-                xPos = -window.innerWidth * 0.3 * distanceMultiplier * remainingProgress;
-                yPos = -window.innerHeight * 0.3 * distanceMultiplier * remainingProgress;
+                // Sideways room is what a phone lacks, so narrow screens send
+                // the spent cards upward instead of out to the left.
+                const ySpread = narrow() ? 0.22 : 0.3;
+                const xTravel = Math.min(window.innerWidth * 0.3, shiftLimit());
+                xPos = -xTravel * distanceMultiplier * remainingProgress;
+                yPos = -window.innerHeight * ySpread * distanceMultiplier * remainingProgress;
               }
             }
 
@@ -128,7 +153,16 @@ const Proccess = () => {
 
    
 
+    let resizeTimer: ReturnType<typeof setTimeout>;
+    const onResize = () => {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => ScrollTrigger.refresh(), 200);
+    };
+    window.addEventListener("resize", onResize);
+
     return () => {
+      window.removeEventListener("resize", onResize);
+      clearTimeout(resizeTimer);
       titleTrigger.kill();
       scrollTrigger?.kill();
       firstCardTrigger.kill();
@@ -190,10 +224,11 @@ const Proccess = () => {
           <div
             ref={index === 0 ? firstCardRef : null}
             className={`card absolute overflow-hidden ${isSafariMobile ? "top-[30%]" : "top-[60%]"} md:top-[50%]
-            ${isSafariMobile ? "left-[20%]" : "left-1/2"}
-            transform -translate-x-1/2 -translate-y-1/2 will-change-transform
+            left-1/2
+            will-change-transform
             md:w-[45%] xl:w-1/4 h-1/2 xl:h-[60%] rounded-3xl p-1.5 md:p-2
-            text-white max-md:w-3/4 shadow-[0_40px_80px_-30px_rgba(2,5,26,0.95)]
+            text-white max-md:w-[78%] max-md:max-w-[340px] max-md:h-[54vh]
+            shadow-[0_40px_80px_-30px_rgba(2,5,26,0.95)]
             ${
               index % 2 === 0
                 ? "bg-linear-to-br from-brand-lavender via-brand-violet to-brand-blue"
